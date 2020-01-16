@@ -3,6 +3,15 @@ RESET
 ==============================================================================*/
 @import '../stylereset/reset.styl'
 
+
+/*==============================================================================
+Global styles
+==============================================================================*/
+@import '../globalstyle/global.styl'
+
+header-color = cd-hellgrau
+footer-background = cd-sand
+
 /*==============================================================================
 Including other components
 ==============================================================================*/
@@ -10,11 +19,59 @@ Including other components
 
 /*==============================================================================
 Including other components
-==============================================================================*/
-// body
-//     font-family:
-     
-#about-link
-    color red
-    padding 20px
+==============================================================================*/     
+#menu-link-home
+    font-weight: bold
+#banner-image-row
+    background-image: url("img/logo.svg")
+
+
+
+#page-cards
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    width: 100%
+    max-width: max-content-width
+    margin auto
+    margin-top: 60px
+    margin-bottom: 30px
+
+.page-card
+    background-color cd-hellgrau
+    padding 10px
+    width: 220px
+    margin-bottom 30px
+
+.page-card-image
+    width: 220px
+    height: 280px
+    background-color brown
+    margin-bottom 10px
+
+.page-card-title
+    color white
+    font-weight: bold
+    font-size: 15pt
+    padding 10px
+    text-align: center
+    width 200px
+
+#page-card-willkommensfest-title
+    background-color cd-dust
+#page-card-trauung-title
+    background-color cd-altrosa
+#page-card-trauer-title
+    background-color cd-bluegrey
+
+#welcoming-text
+    color cd-altrosa
+    max-width inner-content-width
+    text-align: center
+    margin auto
+    margin-bottom 10px
+.welcoming-signature
+    color black
     width 100%
+    text-align: center
+    margin-bottom 20px

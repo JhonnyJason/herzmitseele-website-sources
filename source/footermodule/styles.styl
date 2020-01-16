@@ -1,0 +1,105 @@
+// footer styles
+footer-height = 300px
+social-icon-size = 30px
+
+#footer
+    padding-top 20px
+    padding-bottom 20px
+    background-color footer-background
+    color white
+
+    #footer-content
+        max-width max-content-width
+        display: flex
+        margin auto
+        flex-wrap: wrap
+        justify-content: space-between
+
+    #footer-column-left
+        position relative
+        max-width: 400px
+        margin-left 20px
+        height: footer-height
+    #footer-column-middle
+        position relative
+        height: footer-height
+    #footer-column-right
+        position relative
+        max-width: 400px
+        text-align right
+        margin-right 20px
+        height: footer-height
+
+    #contact-block
+        h1 
+            margin-bottom 30px
+    #address-block
+        margin-top 30px
+    #footer-links-block
+        position: absolute
+        bottom 0
+        left 0
+        a
+            margin-right 7px
+
+    #more-information-block
+        h2
+            margin-bottom 30px
+        a
+            display block
+            text-decoration: underline
+    #copyright-block
+        position: absolute
+        bottom 0
+        right 0
+
+    #social-media-block
+        text-align: center
+    #facebook-icon
+        display inline-block
+        background-image url("img/facebook-icon.svg")
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        width social-icon-size
+        height social-icon-size
+        margin-right 7px
+    #instagram-icon
+        display inline-block
+        background-image url("img/instagram-icon.svg")
+        background-size: cover
+        background-position center
+        background-repeat: no-repeat
+        width: social-icon-size
+        height social-icon-size
+    #claim-block
+        background-image: url("img/claim.svg")
+        background-repeat: no-repeat
+        background-size contain
+        background-position center
+        margin-top 5px
+        height 30px
+        width 200px
+
+    #up-button-block
+        text-align center
+        position absolute
+        bottom 30px  
+        width 100%  
+        #up-button
+            display: inline-block
+            border solid 3px red
+            border-radius 50%
+            height 50px
+            width 50px
+            
+    @media screen and (max-width: 737px)
+        #footer-column-right
+            text-align left
+            margin-left 20px
+            margin-top 30px
+            margin-right 0
+    @media screen and (max-width: 452px)
+        #footer-column-middle
+            margin-top 30px
+            height: 160px
