@@ -1,0 +1,61 @@
+//aboutme styles
+/*==========================================================
+Variables to tweak the style
+==========================================================*/
+aboutme-spacing = 60px
+
+avatar-picture-width = 300px
+avatar-picture-height = 360px
+avatar-to-text-gap = 40px
+
+separator-line-width = 3px
+
+mobile-side-padding = 5px
+min-width-for-row = 750px
+
+/*==========================================================
+Serious Stuff
+==========================================================*/
+max-text-width = max-content-width - avatar-picture-width - avatar-to-text-gap
+
+#aboutme
+    display flex
+    margin auto
+    padding aboutme-spacing 0
+    width 100%
+    box-sizing: border-box
+    max-width max-content-width
+    border-bottom solid separator-line-width cd-hellgrau
+
+    #avatar-picture
+        flex-shrink 0
+        background-color black
+        background-image url("img/avatar.jpg")
+        width: avatar-picture-width
+        height: avatar-picture-height
+        margin-right: avatar-to-text-gap
+    
+    #aboutme-text
+        max-width: max-text-width
+        p
+            font-size 15pt
+            letter-spacing: 0.7pt
+
+/*==========================================================
+Responsive Stuff
+==========================================================*/
+@media screen and (max-width: max-content-width)
+    #aboutme
+        padding-left mobile-side-padding
+        padding-right mobile-side-padding
+@media screen and (max-width: min-width-for-row)
+    #aboutme
+        flex-direction: column
+
+        #avatar-picture
+            margin auto
+            margin-bottom avatar-to-text-gap
+        #aboutme-text
+            margin auto
+            p
+                text-align center

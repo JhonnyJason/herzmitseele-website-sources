@@ -1,0 +1,41 @@
+// serviceofferlisting styles
+/*==========================================================
+Variables to tweak the style
+==========================================================*/
+service-offer-spacing = 90px
+title-listing-gap = 30px
+
+listing-to-decoration-gap = 30px
+decoration-top-space = 70px
+
+decoration-element-size = 20px
+
+/*==========================================================
+Serious Stuff
+==========================================================*/
+#serviceofferlisting
+    margin auto
+    margin-top service-offer-spacing
+    margin-bottom service-offer-spacing
+    max-width inner-content-width
+
+    h1
+        color service-theme-color
+        font-weight bold
+        text-align center
+        margin-bottom title-listing-gap
+    p
+        text-align center
+        margin-bottom listing-to-decoration-gap
+    p:not(:first-child)
+        position relative
+        padding-top: decoration-top-space 
+    p:not(:first-child)::before
+        content ""
+        position absolute
+        top: 0
+        left: "calc(50% - %s)" % (decoration-element-size / 2)
+        height decoration-element-size
+        width decoration-element-size
+        background-color black
+        background-image url("img/decoration-sun.svg")

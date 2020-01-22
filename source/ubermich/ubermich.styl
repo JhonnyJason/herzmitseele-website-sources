@@ -1,0 +1,39 @@
+/*==========================================================
+RESET
+==========================================================*/
+@import '../stylereset/reset.styl'
+
+/*==========================================================
+Global Styles
+==========================================================*/
+@import '../globalstyle/global.styl'
+
+/*==========================================================
+Specific Variable Definitions
+==========================================================*/
+header-color = cd-hellgrau
+footer-background = cd-sand
+
+/*==========================================================
+All Module Styles
+==========================================================*/
+@import '../allmodules/allstyles.styl'
+
+/*==========================================================
+Specific Style Overwrites
+==========================================================*/
+#menu-link-ubermich
+    font-weight bold
+    color cd-sand !important
+
+#banner-image-row
+    background-image url("img/ubermich.jpg")
+
+#appointmentbutton
+    margin-bottom: 150px
+
+/*==========================================================
+Component Styles
+==========================================================*/
+@import 'components/aboutme/styles.styl'
+@import 'components/actioncall/styles.styl'

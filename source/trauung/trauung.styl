@@ -1,0 +1,41 @@
+/*==========================================================
+RESET
+==========================================================*/
+@import '../stylereset/reset.styl'
+
+/*=========================================================
+Global styles
+==========================================================*/
+@import '../globalstyle/global.styl'
+
+/*==========================================================
+Specific Variable Definitions
+==========================================================*/
+header-color = cd-altrosa
+footer-background = cd-altrosa
+service-theme-color = cd-altrosa
+
+/*=========================================================
+All Module Styles
+=========================================================*/
+@import '../allmodules/allstyles.styl'
+
+/*==========================================================
+Specific Style Overwrites
+==========================================================*/
+// here it is very ok to use !important
+#menu-link-trauung
+    font-weight bold
+    color cd-altrosa !important
+
+#banner-image-row
+    background-image: url("img/trauung.jpg")
+
+#servicedescription-description
+    p.description-line
+        margin-top 60px !important
+        
+/*=========================================================
+Component Styles
+=========================================================*/
+@import 'components/expectations/styles.styl'

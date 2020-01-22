@@ -1,0 +1,70 @@
+// page-cards styles
+/*=====================================================
+Variables to tweak the style 
+=====================================================*/
+page-cards-spacing-top = 60px
+page-cards-spacing-bottom = 60px
+
+page-card-width = 240px
+page-card-outer-frame-padding = 10px
+page-card-title-padding = 10px
+page-card-image-height = 280px
+
+page-card-gap = 30px
+
+/*=====================================================
+Elements to maybe tweak 
+=====================================================*/
+#page-card-willkommensfest-title
+    background-color cd-dust
+#page-card-trauung-title
+    background-color cd-altrosa
+#page-card-trauer-title
+    background-color cd-bluegrey
+
+#page-card-willkommensfest-image
+    background-image: url("img/willkommensfest-card.jpg")
+#page-card-trauung-image
+    background-image: url("img/trauung-card.jpg")
+#page-card-trauer-image
+    background-image: url("img/trauer-card.jpg")
+
+/*=====================================================
+The Serious Stuff
+=====================================================*/
+page-card-content-width = (page-card-width - (2 * page-card-outer-frame-padding))
+page-card-image-width = page-card-content-width
+page-card-title-width = (page-card-content-width - (2 * page-card-title-padding))
+
+#page-cards
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    width: 100%
+    max-width: max-content-width
+    margin auto
+    margin-top: page-cards-spacing-top
+    margin-bottom: page-cards-spacing-bottom
+
+    .page-card
+        background-color cd-dust
+        padding page-card-outer-frame-padding
+        width: page-card-content-width
+        margin-bottom page-card-gap
+
+    .page-card-image
+        width: page-image-width
+        height: page-card-image-height
+        background-color black
+        background-size cover
+        background-repeat no-repeat
+        background-position: center
+        margin-bottom page-card-outer-frame-padding
+
+    .page-card-title
+        color white
+        font-weight: bold
+        font-size: 15pt
+        padding page-card-title-padding
+        text-align: center
+        width page-card-title-width

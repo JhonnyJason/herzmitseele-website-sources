@@ -1,0 +1,36 @@
+/*==========================================================
+RESET
+==========================================================*/
+@import '../stylereset/reset.styl'
+
+/*=========================================================
+Global styles
+==========================================================*/
+@import '../globalstyle/global.styl'
+
+/*==========================================================
+Specific Variable Definitions
+==========================================================*/
+service-theme-color = cd-bluegrey
+header-color = service-theme-color
+footer-background = service-theme-color
+
+/*=========================================================
+All Module Styles
+=========================================================*/
+@import '../allmodules/allstyles.styl'
+
+/*==========================================================
+Specific Style Overwrites
+==========================================================*/
+#menu-link-trauer
+    font-weight bold
+    color cd-bluegrey !important
+
+#banner-image-row
+    background-image: url("img/trauung.jpg")
+
+/*==========================================================
+Component Styles
+==========================================================*/
+@import 'components/expectations/styles.styl'

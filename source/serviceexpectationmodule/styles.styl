@@ -1,0 +1,84 @@
+//serviceexpectation section styles
+/*=====================================================
+Variables to tweak the style 
+=====================================================*/
+day-to-cost-expecation-gap = 70px
+title-to-day-expectation-gap = 30px
+
+cost-title-spacing = 45px
+cost-expecation-outer-border-width = 2px
+cost-expectation-bottom-padding = 60px
+
+card-title-to-subtitle-gap = 20px
+card-subtitle-height = 90px
+card-paragraph-gap = 20px
+
+cost-duration-top-space = 60px
+cost-duration-decoration-size = 20px
+
+/*=====================================================
+Serious Stuff 
+=====================================================*/
+#expectationofday
+    margin auto
+    max-width inner-content-width
+    h1
+        color service-theme-color
+        font-weight bold
+        margin-bottom title-to-day-expectation-gap
+        text-align center
+    p
+        text-align center
+
+#expectationofcost
+    box-sizing: border-box
+    max-width inner-content-width
+    margin auto
+    margin-top day-to-cost-expecation-gap
+    border solid cost-expecation-outer-border-width service-theme-color
+    > h1
+        color black
+        font-size 15pt
+        text-align center
+        padding-top cost-title-spacing
+        padding-bottom cost-title-spacing
+        margin 0
+
+#expectation-cost-cards
+    padding-bottom cost-expectation-bottom-padding
+    text-align center
+    h1
+        color: service-theme-color
+        font-weight bold
+        padding 0
+        margin 0
+        margin-bottom card-title-to-subtitle-gap
+        font-size 13pt
+        letter-spacing: 0.7pt
+    h2
+        max-width 300px
+        margin auto
+        text-align center
+        font-weight bold
+        font-size 11pt
+        letter-spacing: 0.5pt
+        height card-subtitle-height
+    p
+        font-size 11pt
+        margin-bottom card-paragraph-gap
+    .cost-duration
+        @extends p
+        font-size 11pt
+        text-align center
+        font-weight bold
+        padding-top cost-duration-top-space
+        position relative
+    .cost-duration::before
+        content ""
+        position absolute
+        top 0
+        left "calc(50% - %s)" % (cost-duration-decoration-size / 2)
+        height cost-duration-decoration-size
+        width cost-duration-decoration-size
+        background-color black
+        background-image url("img/decoration-sun.svg")

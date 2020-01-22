@@ -1,0 +1,28 @@
+//seviceexpectation styles - the page specific ones
+/*=====================================================
+Variables to tweak the style 
+=====================================================*/
+card-separator-width =  2px
+card-separator-color = service-theme-color
+card-separator-gap = 30px
+
+mobile-cards-gap = 70px
+
+/*=====================================================
+Serious Stuff 
+=====================================================*/
+#expectation-cost-cards
+    display grid
+    grid-template-columns 1fr 1fr
+    
+#trauer-cost-option-all
+    padding-right card-separator-gap
+    border-right solid card-separator-width card-separator-color
+
+@media screen and (max-width: 700px)
+    #expectation-cost-cards
+        grid-template-columns: auto
+        grid-row-gap mobile-cards-gap
+    #trauer-cost-option-all
+        border: none
+

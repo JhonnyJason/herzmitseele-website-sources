@@ -1,0 +1,122 @@
+// servicedescription styles
+/*==========================================================
+Variables to tweak the style
+==========================================================*/
+intro-text-spacing = 30px
+
+more-info-banner-top-gap = 10px
+more-info-banner-spacing-top = 40px
+more-info-banner-spacing-bottom = 30px
+more-info-banner-background = service-theme-color
+// service-theme-color should be defined in sources/source/<pageName/<pageName>.styl
+
+servicedescription-spacing = 40px
+
+description-to-separator-gap = 60px
+description-line-gap = 15px
+separator-to-side-info-gap = 40px
+
+more-info-icon-gap = 20px
+more-info-icon-size = 20px
+
+max-width-for-column = 750px
+content-width-side-padding = 5px
+
+
+description-separator-color = cd-anthrazit
+description-separator-width = 2px
+
+/*==========================================================
+Serious Stuff
+==========================================================*/
+#intro-text
+    max-width: inner-content-width
+    text-align center
+    font-weight: bold
+    margin auto
+    margin-top intro-text-spacing
+    margin-bottom intro-text-spacing
+
+.description-text 
+    font-size 14pt
+    letter-spacing: 0.7pt
+
+#servicedescription
+    background-color cd-dust
+    width 100%
+    padding servicedescription-spacing 0
+
+    #servicedescription-content
+        display grid
+        grid-template-columns: 7fr 4fr
+        margin auto
+        max-width max-content-width
+
+    #servicedescription-description
+        padding-right: description-to-separator-gap
+        border-right: solid description-separator-width description-separator-color
+        h2
+            @extends .description-text 
+            font-weight bold
+            font-style italic
+            text-align justify
+        p
+            @extends .description-text 
+            text-align justify
+
+        .description-line
+            margin-top description-line-gap
+
+    #servicedescription-side-info
+        display flex
+        justify-content: center
+        flex-direction column
+        margin-left: separator-to-side-info-gap
+        h2
+            @extends .description-text 
+            font-weight bold
+            text-align center
+        p
+            @extends .description-text 
+            text-align center
+
+    @media screen and  (max-width: max-content-width)
+        #servicedescription-content
+            padding-left: content-width-side-padding
+            padding-right content-width-side-padding
+
+    @media screen and (max-width: max-width-for-column)
+        #servicedescription-content
+            grid-template-columns: auto
+        #servicedescription-description
+            padding-right: 0
+            border-right: none
+            padding-bottom: description-to-separator-gap
+            border-bottom: solid description-separator-width description-separator-color
+            h2
+                text-align center
+            p
+                text-align center
+
+        #servicedescription-side-info
+            display block
+            margin-left: 0
+            margin-top: separator-to-side-info-gap
+
+
+#more-info-banner
+    margin-top more-info-banner-top-gap
+    padding-top more-info-banner-spacing-top
+    padding-bottom more-info-banner-spacing-bottom
+    background-color more-info-banner-background
+    h1
+        color white
+        font-weight bold
+        text-align center
+    #more-info-down-icon
+        background-color black
+        margin auto
+        margin-top more-info-icon-gap
+        width more-info-icon-size
+        height more-info-icon-size
+
