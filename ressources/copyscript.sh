@@ -11,6 +11,7 @@ mkdir -p output/fonts
 cp sources/ressources/fonts/* output/fonts/
 cp sources/ressources/img/* output/img/
 
+cp sources/ressources/datenschutz.pdf output/datenschutz.pdf
 cp sources/ressources/favicons/* output/
 cp sources/ressources/manifests/* output/
 

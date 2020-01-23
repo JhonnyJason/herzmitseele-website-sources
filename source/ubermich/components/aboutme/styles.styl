@@ -10,7 +10,6 @@ avatar-to-text-gap = 40px
 
 separator-line-width = 3px
 
-mobile-side-padding = 5px
 min-width-for-row = 750px
 
 /*==========================================================
@@ -20,8 +19,8 @@ max-text-width = max-content-width - avatar-picture-width - avatar-to-text-gap
 
 #aboutme
     display flex
-    margin auto
-    padding aboutme-spacing 0
+    padding-top aboutme-spacing
+    padding-bottom aboutme-spacing
     width 100%
     box-sizing: border-box
     max-width max-content-width
@@ -44,10 +43,6 @@ max-text-width = max-content-width - avatar-picture-width - avatar-to-text-gap
 /*==========================================================
 Responsive Stuff
 ==========================================================*/
-@media screen and (max-width: max-content-width)
-    #aboutme
-        padding-left mobile-side-padding
-        padding-right mobile-side-padding
 @media screen and (max-width: min-width-for-row)
     #aboutme
         flex-direction: column

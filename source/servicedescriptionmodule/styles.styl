@@ -20,8 +20,6 @@ more-info-icon-gap = 20px
 more-info-icon-size = 20px
 
 max-width-for-column = 750px
-content-width-side-padding = 5px
-
 
 description-separator-color = cd-anthrazit
 description-separator-width = 2px
@@ -30,10 +28,8 @@ description-separator-width = 2px
 Serious Stuff
 ==========================================================*/
 #intro-text
-    max-width: inner-content-width
     text-align center
     font-weight: bold
-    margin auto
     margin-top intro-text-spacing
     margin-bottom intro-text-spacing
 
@@ -49,8 +45,6 @@ Serious Stuff
     #servicedescription-content
         display grid
         grid-template-columns: 7fr 4fr
-        margin auto
-        max-width max-content-width
 
     #servicedescription-description
         padding-right: description-to-separator-gap
@@ -80,11 +74,6 @@ Serious Stuff
             @extends .description-text 
             text-align center
 
-    @media screen and  (max-width: max-content-width)
-        #servicedescription-content
-            padding-left: content-width-side-padding
-            padding-right content-width-side-padding
-
     @media screen and (max-width: max-width-for-column)
         #servicedescription-content
             grid-template-columns: auto
@@ -113,7 +102,8 @@ Serious Stuff
         color white
         font-weight bold
         text-align center
-    #more-info-down-icon
+    #more-info-down-button
+        cursor: pointer
         background-color black
         margin auto
         margin-top more-info-icon-gap

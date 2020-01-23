@@ -8,6 +8,7 @@ pushd testing/document-root
 ln -sf ../../sources/ressources/fonts fonts
 ln -sf ../../sources/ressources/img img
 
+ln -sf ../../sources/ressources/datenschutz.pdf .
 ln -sf ../../sources/ressources/manifests/* .
 ln -sf ../../sources/ressources/favicons/* .
 

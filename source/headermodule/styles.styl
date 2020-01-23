@@ -3,7 +3,6 @@ logo-size = 180px
 logo-top-spacing = 20px
 logo-to-menu-gap = 30px
 menu-to-banner-gap = 20px
-menu-side-padding = 5px
 
 page-quote-row-padding-top = 30px
 page-quote-row-padding-bottom = 20px
@@ -29,8 +28,6 @@ minimal-menu-width = 750px
 #menu
     display: flex
     justify-content: space-between
-    max-width: max-content-width
-    margin auto
     margin-bottom menu-to-banner-gap
     #burger
         display: none
@@ -59,20 +56,12 @@ minimal-menu-width = 750px
         
         h1.page-quote
             color white
-            margin auto
-            max-width: inner-content-width
             text-align: center
             margin-bottom page-quote-to-signature-gap
         .page-quote-signature
             color white
             text-align center
             width 100%
-
-
-@media screen and (max-width: max-content-width)
-    #menu
-        padding-left menu-side-padding
-        padding-right menu-side-padding
 
 @media screen and (max-width: minimal-menu-width)
     #menu

@@ -1,6 +1,11 @@
 footermodule = {name: "footermodule"}
 
 #region modulesFromTheEnvironment
+utl = null
+#endregion
+
+#region HTMLElements
+upButton = null
 #endregion
 
 #region printLogFunctions
@@ -13,9 +18,16 @@ print = (arg) -> console.log(arg)
 ##############################################################################
 footermodule.initialize = () ->
     log "footermodule.initialize"
+    utl = allModules.vanillautilmodule
+    upButton = document.getElementById("up-button")
+    upButton.addEventListener("click", upButtonClicked)
     return
     
 #region internalFunctions
+upButtonClicked = ->
+    log "upButtonClicked"
+    utl.scrollTo(0)
+    return
 #endregion
 
 #region exposedFunctions

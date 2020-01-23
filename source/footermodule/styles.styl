@@ -4,7 +4,6 @@ Variables to tweak the style
 =====================================================*/
 footer-content-padding-top = 30px
 footer-content-padding-bottom = 30px
-mobile-footer-content-side-padding = 5px
 mobile-footer-block-gap = 50px
 
 center-column-width = 200px
@@ -25,16 +24,17 @@ Serious Stuff
     color white
 
 #footer-content
-    max-width max-content-width
     padding-top footer-content-padding-top
     padding-bottom footer-content-padding-bottom
-    margin 0 auto
     display: grid
     grid-template-columns: 1fr center-column-width 1fr
 /*=====================================================
 Grid Blocks
 ===================================================*/    
+#contact-block.lit
+    background-color alpha(grey, 0.4)
 #contact-block
+    transition background 0.4s
     h1 
         margin-bottom 30px
     #contact-address
@@ -87,10 +87,12 @@ Grid Blocks
     justify-self: center
     align-self: center
     #up-button
+        background-color black
         border solid 3px cd-altrosa
         border-radius 50%
         height up-button-size
         width up-button-size
+        cursor: pointer
 
 #copyright-block
     text-align: right
@@ -101,21 +103,14 @@ Grid Blocks
 /*=====================================================
 Responsive Parts
 ===================================================*/
-min-width-for-full-grid = ((2 * edge-column-min-width) + center-column-width + (2 * mobile-footer-content-side-padding))
-
-@media screen and (max-width: max-content-width)
-    #footer-content
-        padding-left mobile-footer-content-side-padding
-        padding-right mobile-footer-content-side-padding
+min-width-for-full-grid = ((2 * edge-column-min-width) + center-column-width + (2 * mobile-side-padding))
 @media screen and (max-width: min-width-for-full-grid)
     #footer-content
         grid-template-columns: auto
         grid-row-gap mobile-footer-block-gap
-
     #contact-block
         text-align: center
     #more-information-block
         text-align: center
     #footer-links-block
         text-align: center
-    // #copyright-block

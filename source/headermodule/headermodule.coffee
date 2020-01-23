@@ -1,10 +1,13 @@
 headermodule = {name: "headermodule"}
 
 #region modulesFromTheEnvironment
+utl = null
 #endregion
 
 #region HTMLElements
 menu = null
+contactBlock = null
+contactLink = null
 #endregion
 
 #region printLogFunctions
@@ -17,7 +20,13 @@ print = (arg) -> console.log(arg)
 ##############################################################################
 headermodule.initialize = () ->
     log "headermodule.initialize"
+    utl = allModules.vanillautilmodule
     menu = document.getElementById("menu")
+    contactBlock = document.getElementById("contact-block")
+    contactLink = document.getElementById("menu-link-kontakt")
+
+    contactLink.addEventListener("click", kontaktClicked)
+
     document.addEventListener("scroll", onScroll)
     menu.addEventListener("click", menuClicked)
     return
@@ -40,9 +49,25 @@ menuClicked = ->
     menu.classList.remove("collapsed")
     isCollapsed = false
     return
+
+kontaktClicked = ->
+    log "kontaktClicked"
+    contactBlock.classList.add("lit")
+    utl.scrollTo(contactBlock)
+    setTimeout(unlitContactBlock, 800)
+    return
+
+unlitContactBlock = ->
+    log "unlitContactBlock"
+    contactBlock.classList.remove("lit")
+    return
 #endregion
 
 #region exposedFunctions
 #endregion
 
 module.exports = headermodule
+
+
+
+
