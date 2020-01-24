@@ -23,7 +23,7 @@ servicedescriptionmodule.initialize = () ->
     moreInfoDownButton = document.getElementById("more-info-down-button")
     serviceOfferListing = document.getElementById("serviceofferlisting")
 
-    moreInfoDownButton.addEventListener("click", moreInfoDownButtonClicked)
+    if moreInfoDownButton then moreInfoDownButton.addEventListener("click", moreInfoDownButtonClicked)
     return
     
 #region internalFunctions

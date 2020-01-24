@@ -46,6 +46,7 @@ vanillautilmodule.initialize = () ->
     return
     
 #region internalFunctions
+alertScrollend = -> alert("Scoll ended!")
 #endregion
 
 #region exposedFunctions
@@ -67,7 +68,7 @@ vanillautilmodule.scrollTo = (destination, duration = 400, easing = 'easeInOutQu
         timeFunction = easings[easing](time)
         window.scroll 0, Math.ceil(timeFunction * (scrollOffset - start) + start)
 
-        if window.pageYOffset == scrollOffset
+        if now >= (startTime + duration)
             if callback then callback()
             return
         requestAnimationFrame scroll

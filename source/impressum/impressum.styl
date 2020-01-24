@@ -4,17 +4,28 @@ RESET
 @import '../stylereset/reset.styl'
 
 /*=========================================================
-Global styles
+Global Styles
 ==========================================================*/
 @import '../globalstyle/global.styl'
 
+/*=========================================================
+Specific Variable Definitions
+==========================================================*/
 header-color = cd-hellgrau
 footer-background = cd-sand
 
 /*=========================================================
-Including other components
+All Module Styles
 =========================================================*/
 @import '../allmodules/allstyles.styl'
 
+/*=========================================================
+Specific Style Overwrites
+=========================================================*/
 #banner-image-row
     background-image: url("/img/impressum.jpg")
+
+/*=========================================================
+All Module Styles
+=========================================================*/
+@import 'components/impressum/styles.styl'
