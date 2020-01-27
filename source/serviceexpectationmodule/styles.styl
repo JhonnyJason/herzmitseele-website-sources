@@ -13,8 +13,11 @@ card-title-to-subtitle-gap = 20px
 card-subtitle-height = 90px
 card-paragraph-gap = 20px
 
-cost-duration-top-space = 60px
+cost-duration-margin-top = 30px
+cost-duration-decoration-space = 50px
 cost-duration-decoration-size = 20px
+
+decoration-image-url = decoration-sun-url
 
 /*=====================================================
 Serious Stuff 
@@ -67,7 +70,8 @@ Serious Stuff
         font-size 11pt
         text-align center
         font-weight bold
-        padding-top cost-duration-top-space
+        margin-top cost-duration-margin-top
+        padding-top cost-duration-decoration-space
         position relative
     .cost-duration::before
         content ""
@@ -76,5 +80,4 @@ Serious Stuff
         left "calc(50% - %s)" % (cost-duration-decoration-size / 2)
         height cost-duration-decoration-size
         width cost-duration-decoration-size
-        background-color black
-        background-image url("/img/decoration-sun.svg")
+        background-image decoration-image-url

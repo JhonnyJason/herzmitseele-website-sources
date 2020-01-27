@@ -17,7 +17,7 @@ description-line-gap = 15px
 separator-to-side-info-gap = 40px
 
 more-info-icon-gap = 20px
-more-info-icon-size = 20px
+more-info-icon-size = 18px
 
 max-width-for-column = 750px
 
@@ -34,7 +34,7 @@ Serious Stuff
     margin-bottom intro-text-spacing
 
 .description-text 
-    font-size 14pt
+    font-size 12pt
     letter-spacing: 0.7pt
 
 #servicedescription
@@ -104,7 +104,10 @@ Serious Stuff
         text-align center
     #more-info-down-button
         cursor: pointer
-        background-color black
+        background-image url("/img/arrow-white.svg")
+        transform: rotate(180deg)
+        background-size: contain
+        background-position: center
         margin auto
         margin-top more-info-icon-gap
         width more-info-icon-size
