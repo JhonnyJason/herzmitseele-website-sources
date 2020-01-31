@@ -24,11 +24,14 @@ Serious Stuff
 =====================================================*/
 #expectationofday
     h1
+        @extends .cd-title
         color service-theme-color
         font-weight bold
         margin-bottom title-to-day-expectation-gap
         text-align center
     p
+        @extends .cd-text
+        line-height: 150%
         text-align center
 
 #expectationofcost
@@ -36,7 +39,6 @@ Serious Stuff
     margin-top day-to-cost-expecation-gap
     border solid cost-expecation-outer-border-width service-theme-color
     > h1
-        color black
         font-size 15pt
         text-align center
         padding-top cost-title-spacing
@@ -61,6 +63,7 @@ Serious Stuff
         font-weight bold
         font-size 11pt
         letter-spacing: 0.5pt
+        line-height: 140%
         height card-subtitle-height
     p
         font-size 11pt

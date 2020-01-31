@@ -28,17 +28,14 @@ description-separator-width = 2px
 Serious Stuff
 ==========================================================*/
 #intro-text
+    @extends .cd-title
     text-align center
     font-weight: bold
     margin-top intro-text-spacing
     margin-bottom intro-text-spacing
 
-.description-text 
-    font-size 12pt
-    letter-spacing: 0.7pt
-
 #servicedescription
-    background-color cd-dust
+    background-color alpha(service-theme-color, 0.1)
     width 100%
     padding servicedescription-spacing 0
 
@@ -50,12 +47,12 @@ Serious Stuff
         padding-right: description-to-separator-gap
         border-right: solid description-separator-width description-separator-color
         h2
-            @extends .description-text 
+            @extends .cd-text 
             font-weight bold
             font-style italic
             text-align justify
         p
-            @extends .description-text 
+            @extends .cd-text 
             text-align justify
 
         .description-line
@@ -67,11 +64,12 @@ Serious Stuff
         flex-direction column
         margin-left: separator-to-side-info-gap
         h2
-            @extends .description-text 
+            @extends .cd-text
             font-weight bold
             text-align center
+            margin-bottom 5px
         p
-            @extends .description-text 
+            @extends .cd-text 
             text-align center
 
     @media screen and (max-width: max-width-for-column)
@@ -99,6 +97,7 @@ Serious Stuff
     padding-bottom more-info-banner-spacing-bottom
     background-color more-info-banner-background
     h1
+        @extends .cd-title
         color white
         font-weight bold
         text-align center
