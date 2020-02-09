@@ -2,21 +2,41 @@
 /*=====================================================
 Variables to tweak the style 
 =====================================================*/
-welcoming-text-color = cd-altrosa
-
-welcoming-text-to-signature-gap = 10px
-welcoming-spacing-bottom = 30px
+welcoming-spacing-top = 90px
+welcoming-outro-to-signature-gap = 20px
+welcoming-spacing-bottom = 100px
 
 /*=====================================================
 The Serious Stuff
 =====================================================*/
-#welcoming-text
-    color welcoming-text-color
-    text-align: center
-    margin-bottom welcoming-text-to-signature-gap
+#welcoming-intro-content
+    margin-top welcoming-spacing-top
+    line-height 170%
+    h1
+        @extends .cd-alone-text
+        font-size: 12pt
+        text-transform: none
+        font-weight bold
+        text-align center
+        letter-spacing: 2.5pt
+        margin-bottom 7px
+    p
+        @extends .cd-alone-text
+        font-size: 12pt
+        text-align center
+        max-width: 600px
+        margin auto
+        letter-spacing 1.8pt
 
-.welcoming-signature
-    color black
-    width 100%
-    text-align: center
-    margin-bottom welcoming-spacing-bottom
+#welcoming-outro-content
+    p
+        @extends .cd-alone-text
+        font-size: 12pt
+        text-align center
+        letter-spacing 1.8pt
+    p.welcoming-signature
+        font-size 12pt
+        letter-spacing 2pt
+        margin-top welcoming-outro-to-signature-gap
+        text-align: center
+        margin-bottom welcoming-spacing-bottom

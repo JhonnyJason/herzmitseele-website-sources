@@ -11,7 +11,7 @@ avatar-to-text-gap = 40px
 separator-line-width = 3px
 
 min-width-for-row = 750px
-
+general-to-self-description-gap = 30px
 /*==========================================================
 Serious Stuff
 ==========================================================*/
@@ -27,16 +27,24 @@ max-text-width = max-content-width - avatar-picture-width - avatar-to-text-gap
         flex-shrink 0
         background-color black
         background-image url("/img/avatar.jpg")
+        background-position center
+        background-size: cover
         width: avatar-picture-width
-        height: avatar-picture-height
+        min-height: avatar-picture-height
         margin-right: avatar-to-text-gap
     
     #aboutme-text
         max-width: max-text-width
         p
-            font-size 14pt
-            letter-spacing: 0.7pt
+            @extends .cd-alone-text
+            text-align: left
+            line-height 170%
 
+        p.self-description-top
+            margin-top general-to-self-description-gap
+            font-weight: bold
+        p.self-description-quote
+            font-style: italic
 /*==========================================================
 Responsive Stuff
 ==========================================================*/

@@ -2,13 +2,13 @@
 /*=====================================================
 Variables to tweak the style 
 =====================================================*/
-page-cards-spacing-top = 60px
+page-cards-spacing-top = 100px
 page-cards-spacing-bottom = 60px
 
-page-card-width = 240px
+page-card-width = 200px
 page-card-outer-frame-padding = 10px
 page-card-title-padding = 10px
-page-card-image-height = 280px
+page-card-image-height = 60px
 
 page-card-gap = 30px
 
@@ -18,18 +18,19 @@ card-background-color = cd-hellgrau
 Elements to maybe tweak 
 =====================================================*/
 #page-card-willkommensfest-title
-    background-color cd-dust
+    color cd-sand
 #page-card-trauung-title
-    background-color cd-altrosa
+    color cd-altrosa
 #page-card-trauer-title
-    background-color cd-bluegrey
+    color cd-bluegrey
 
-#page-card-willkommensfest-image
-    background-image: url("/img/willkommensfest-card.jpg")
+
 #page-card-trauung-image
-    background-image: url("/img/trauung-card.jpg")
+    background-image: url("/img/decoration-sun-rose.svg")
+#page-card-willkommensfest-image
+    background-image: url("/img/decoration-sun-sand.svg")
 #page-card-trauer-image
-    background-image: url("/img/trauer-card.jpg")
+    background-image: url("/img/decoration-sun-blue.svg")
 
 /*=====================================================
 The Serious Stuff
@@ -39,17 +40,14 @@ page-card-image-width = page-card-content-width
 page-card-title-width = (page-card-content-width - (2 * page-card-title-padding))
 
 #page-cards
+    @extends .inner-content
     display: flex
     justify-content: space-around
     flex-wrap: wrap
-    width: 100%
-    max-width: max-content-width
-    margin auto
     margin-top: page-cards-spacing-top
     margin-bottom: page-cards-spacing-bottom
 
     .page-card
-        background-color card-background-color
         padding page-card-outer-frame-padding
         width: page-card-content-width
         margin-bottom page-card-gap
@@ -57,16 +55,15 @@ page-card-title-width = (page-card-content-width - (2 * page-card-title-padding)
     .page-card-image
         width: page-card-image-width
         height: page-card-image-height
-        background-color black
-        background-size cover
+        background-size contain
         background-repeat no-repeat
         background-position: center
+        margin auto
         margin-bottom page-card-outer-frame-padding
 
     .page-card-title
-        color white
+        @extends .cd-title
         font-weight: bold
-        font-size: 15pt
         padding page-card-title-padding
         text-align: center
         width page-card-title-width

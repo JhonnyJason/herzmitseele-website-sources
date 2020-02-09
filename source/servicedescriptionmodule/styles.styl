@@ -24,6 +24,8 @@ max-width-for-column = 750px
 description-separator-color = cd-anthrazit
 description-separator-width = 2px
 
+description-separator-size = 20px
+description-separator-spacings = 40px
 /*==========================================================
 Serious Stuff
 ==========================================================*/
@@ -71,6 +73,13 @@ Serious Stuff
         p
             @extends .cd-text 
             text-align center
+        .separator-sun
+            background-image url("/img/decoration-sun-rose.svg")
+            background-size contain
+            background-position center
+            width description-separator-size
+            height description-separator-size
+            margin description-separator-spacings auto
 
     @media screen and (max-width: max-width-for-column)
         #servicedescription-content
