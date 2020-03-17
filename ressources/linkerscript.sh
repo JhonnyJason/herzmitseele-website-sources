@@ -5,8 +5,9 @@
 
 pushd testing/document-root
 
-ln -sf ../../sources/ressources/fonts fonts
-ln -sf ../../sources/ressources/img img
+ln -sfT ../../sources/ressources/fonts fonts
+ln -sfT ../../sources/ressources/img img
+ln -sfT ../../sources/ressources/audio audio
 
 ln -sf ../../sources/ressources/Datenschutzerklärung-HerzmitSeele.pdf .
 ln -sf ../../sources/ressources/AAB-HerzmitSeele.pdf .

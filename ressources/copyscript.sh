@@ -6,10 +6,12 @@
 
 mkdir -p output/img
 mkdir -p output/fonts
+mkdir -p output/audio
 
 ## app files
 cp sources/ressources/fonts/* output/fonts/
 cp sources/ressources/img/* output/img/
+cp sources/ressources/audio/* output/audio/
 
 cp sources/ressources/Datenschutzerklärung-HerzmitSeele.pdf output/Datenschutzerklärung-HerzmitSeele.pdf
 cp sources/ressources/Widerrufsbelehrung-HerzmitSeele.pdf output/Widerrufsbelehrung-HerzmitSeele.pdf

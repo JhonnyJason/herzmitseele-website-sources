@@ -11,4 +11,6 @@ window.onload = ->
 
 appStartup = ->
     ## which modules shall be kickstarted?
+    audioElement = document.getElementById("audio-element")
+    if audioElement then audioElement.volume = 0.15
     return

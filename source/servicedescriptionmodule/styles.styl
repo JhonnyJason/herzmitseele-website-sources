@@ -16,6 +16,9 @@ description-to-separator-gap = 60px
 description-line-gap = 15px
 separator-to-side-info-gap = 40px
 
+audio-control-button-size = 40px
+minimal-audio-presentation-space-top = 40px
+
 more-info-icon-gap = 20px
 more-info-icon-size = 18px
 
@@ -80,6 +83,26 @@ Serious Stuff
             width description-separator-size
             height description-separator-size
             margin description-separator-spacings auto
+
+    #audio-presentation
+        margin-top auto
+        padding-top minimal-audio-presentation-space-top
+        text-align: center
+        h1
+            @extends .cd-text
+            font-weight bold
+            text-align center
+            text-transform: uppercase
+            margin-bottom 5px
+    #audio-control-button
+        padding 0
+        margin 0
+        height: audio-control-button-size
+        width: audio-control-button-size
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        cursor: pointer
 
     @media screen and (max-width: max-width-for-column)
         #servicedescription-content
