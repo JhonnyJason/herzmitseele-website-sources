@@ -80,6 +80,25 @@ Grid Blocks
         display block
         text-decoration: underline
 
+#badge-block
+    display flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    a
+        border-radius 50%
+        height 130px
+        width 130px
+        margin-left 30px
+
+    #badge-wedding-austria
+        background-size: contain
+        background-repeat: no-repeat
+        background-image url("/img/BADGE-AW.png")
+    #badge-wedding-stmk
+        background-size: contain
+        background-repeat: no-repeat
+        background-image url("/img/BADGE-STMK.png")
+
 #footer-links-block
     align-self: end
     a
@@ -124,3 +143,6 @@ min-width-for-full-grid = ((2 * edge-column-min-width) + center-column-width + (
         text-align: center
     #footer-links-block
         text-align: center
+    
+    #badge-block
+        justify-content: center
