@@ -1,0 +1,56 @@
+/*==========================================================
+RESET
+==========================================================*/
+@import '../stylereset/reset.styl'
+
+/*=========================================================
+Global styles
+==========================================================*/
+@import '../globalstyle/global.styl'
+
+/*==========================================================
+Specific Variable Definitions
+==========================================================*/
+header-color = cd-violett
+footer-background = cd-violett
+service-theme-color = cd-violett
+
+decoration-sun-url = url("/img/decoration-sun-violett.svg")
+/*=========================================================
+All Module Styles
+=========================================================*/
+@import '../allmodules/allstyles.styl'
+
+/*==========================================================
+Specific Style Overwrites
+==========================================================*/
+// here it is very ok to use !important
+#menu-link-mentoring
+    font-weight bold
+    color cd-violett !important
+
+#banner-image-row
+    background-image: url("/img/mentoring.jpg")
+
+audio::-webkit-media-controls-panel
+    background-color: service-theme-color
+
+/*=========================================================
+Component Styles
+=========================================================*/
+@import 'components/expectations/styles.styl'
+
+#mentoring-just-for-you
+    cursor pointer
+    margin-bottom 15px
+
+#mentoring-willkommensfeier
+    cursor pointer
+    margin-bottom 15px
+
+#mentoring-trauung
+    cursor pointer
+
+
+#audio-presentation
+    display none !important
