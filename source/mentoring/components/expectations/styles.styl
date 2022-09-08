@@ -2,6 +2,15 @@
 /*=====================================================
 Variables to tweak the style 
 =====================================================*/
+card-separator-width =  2px
+card-separator-color = cd-violett
+card-separator-gap = 30px
+
+mobile-cards-gap = 70px
+
+/*=====================================================
+Variables to tweak the style 
+=====================================================*/
 card-subtitle-color = cd-anthrazit
 card-subtitle-bottom-gap = 20px
 
@@ -17,3 +26,23 @@ Serious Stuff
         height auto
         max-width 260px
         margin-bottom card-subtitle-bottom-gap
+
+#expectation-cost-cards-top
+    padding-bottom 60px
+
+#expectation-cost-cards-grid
+    display grid
+    grid-template-columns 1fr 1fr
+    
+#mentoring-costs-willkommensfeier
+    padding-right card-separator-gap
+    border-right solid card-separator-width card-separator-color
+
+@media screen and (max-width: 700px)
+    #expectation-cost-cards-grid
+        grid-template-columns: auto
+        grid-row-gap mobile-cards-gap
+    #mentoring-costs-willkommensfeier
+        border: none
+        padding 0
+
