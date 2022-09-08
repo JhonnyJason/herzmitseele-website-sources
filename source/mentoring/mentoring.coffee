@@ -43,9 +43,9 @@ mentoringJustForYouClicked = ->
     return
 
 mentoringTrauungClicked = ->
-    utl.scrollTo(angebotMentoringWillkommensfeier)
+    utl.scrollTo(angebotMentoringTrauung)
     return
 
 mentoringWillkommensfeierClicked = ->
-    utl.scrollTo(angebotMentoringTrauung)
+    utl.scrollTo(angebotMentoringWillkommensfeier)
     return
