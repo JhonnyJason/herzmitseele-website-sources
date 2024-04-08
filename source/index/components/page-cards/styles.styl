@@ -6,11 +6,11 @@ page-cards-spacing-top = 60px
 page-cards-spacing-bottom = 60px
 
 page-card-width = 250px
-page-card-outer-frame-padding = 10px
+page-card-outer-frame-padding = 30px 10px 20px 10px
 page-card-title-padding = 10px
 page-card-image-height = 60px
 
-page-card-gap = 30px
+page-card-gap = 50px
 
 card-background-color = cd-hellgrau
 
@@ -39,7 +39,7 @@ Elements to maybe tweak
 /*=====================================================
 The Serious Stuff
 =====================================================*/
-page-card-content-width = (page-card-width - (2 * page-card-outer-frame-padding))
+page-card-content-width = (page-card-width - (20px))
 page-card-image-width = page-card-content-width
 page-card-title-width = (page-card-content-width - (2 * page-card-title-padding))
 
@@ -50,11 +50,21 @@ page-card-title-width = (page-card-content-width - (2 * page-card-title-padding)
     flex-wrap: wrap
     margin-top: page-cards-spacing-top
     margin-bottom: page-cards-spacing-bottom
+    gap 10px
 
+        
     .page-card
         padding page-card-outer-frame-padding
         width: page-card-content-width
         margin-bottom page-card-gap
+        box-shadow 0 0 5px alpha(black, 0.2)
+        border-radius 5px
+    
+        h1
+            // text-shadow: 1px 1px 2px  black
+            margin-bottom 12px        
+    .page-card:hover
+        background-color alpha(grey, 0.05)
 
     .page-card-image
         width: page-card-image-width
@@ -71,3 +81,11 @@ page-card-title-width = (page-card-content-width - (2 * page-card-title-padding)
         padding page-card-title-padding
         text-align: center
         width page-card-title-width
+    p
+        text-align center
+
+    a
+        display block
+        text-align center
+        font-weight: bold
+        text-decoration: underline

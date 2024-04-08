@@ -1,26 +1,25 @@
-headermodule = {name: "headermodule"}
-
-#region modulesFromTheEnvironment
-utl = null
+############################################################
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("headermodule")
 #endregion
 
-#region HTMLElements
+#region modulesFromTheEnvironment
+###################################################################
+import *  as utl from "./vanillautilmodule.js"
+
+###################################################################
 menu = null
 contactBlock = null
 contactLink = null
-#endregion
 
-#region printLogFunctions
-##############################################################################
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["headermodule"]?  then console.log "[headermodule]: " + arg
-    return
-print = (arg) -> console.log(arg)
-#endregion
-##############################################################################
-headermodule.initialize = () ->
-    log "headermodule.initialize"
-    utl = allModules.vanillautilmodule
+
+###################################################################
+isCollapsed = false
+
+###################################################################
+export initialize = ->
+    log "initialize"
     menu = document.getElementById("menu")
     contactBlock = document.getElementById("contact-block")
     contactLink = document.getElementById("menu-link-kontakt")
@@ -31,11 +30,8 @@ headermodule.initialize = () ->
     menu.addEventListener("click", menuClicked)
     return
 
-#region internalProperties
-isCollapsed = false
-#endregion
     
-#region internalFunctions
+###################################################################
 onScroll = ->
     log "onScroll"
     return if isCollapsed
@@ -61,13 +57,3 @@ unlitContactBlock = ->
     log "unlitContactBlock"
     contactBlock.classList.remove("lit")
     return
-#endregion
-
-#region exposedFunctions
-#endregion
-
-module.exports = headermodule
-
-
-
-

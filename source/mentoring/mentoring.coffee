@@ -2,20 +2,13 @@ import Modules from "./allmodules"
 
 global.allModules = Modules
 
-##############################################################################
+###################################################################
 utl = Modules.vanillautilmodule
 angebotMentoringJustForYou = null
 angebotMentoringWillkommensfeier = null
 angebotMentoringTrauung = null
 
-##############################################################################
-window.onload = ->
-    promises = (m.initialize() for n,m of Modules)
-    await Promise.all(promises)
-    appStartup()
-
-
-##############################################################################
+###################################################################
 appStartup = ->
     ## which modules shall be kickstarted?
     audioElement = document.getElementById("audio-element")
@@ -37,7 +30,7 @@ appStartup = ->
 
 
 
-##############################################################################
+###################################################################
 mentoringJustForYouClicked = ->
     utl.scrollTo(angebotMentoringJustForYou)
     return
@@ -49,3 +42,12 @@ mentoringTrauungClicked = ->
 mentoringWillkommensfeierClicked = ->
     utl.scrollTo(angebotMentoringWillkommensfeier)
     return
+
+############################################################
+run = ->
+    promises = (m.initialize() for n,m of Modules when m.initialize?) 
+    await Promise.all(promises)
+    appStartup()
+
+############################################################
+run()

@@ -1,10 +1,12 @@
-vanillautilmodule = {name: "vanillautilmodule"}
-
-#region modulesFromTheEnvironment
+############################################################
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("vanillautilmodule")
 #endregion
 
+############################################################
 #region easingsDefinition
-easings = 
+easings =
     linear: (t) ->
         t
     easeInQuad: (t) ->
@@ -33,30 +35,24 @@ easings =
         if t < 0.5 then 16 * t * t * t * t * t else 1 + 16 * --t * t * t * t * t
 #endregion
 
-#region printLogFunctions
-##############################################################################
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["vanillautilmodule"]?  then console.log "[vanillautilmodule]: " + arg
-    return
-print = (arg) -> console.log(arg)
-#endregion
-##############################################################################
-vanillautilmodule.initialize = () ->
-    log "vanillautilmodule.initialize"
-    return
+############################################################
+export scrollTo = (destination, duration = 400, easing = 'easeInOutQuad', callback) ->
     
-#region internalFunctions
-alertScrollend = -> alert("Scoll ended!")
-#endregion
+    if typeof destination == "string"
+        elementId = destination
+        destination = document.getElementById(elementId)
+        if !destination? then throw new Error("Element did not exist! id: #{elementId}")
+    
 
-#region exposedFunctions
-vanillautilmodule.scrollTo = (destination, duration = 400, easing = 'easeInOutQuad', callback) ->
-    
     start = window.pageYOffset
     startTime = if 'now' of window.performance then performance.now() else (new Date).getTime()
     
     getScrollOffset = ->
-        destinationOffset = if typeof destination == 'number' then destination else destination.offsetTop
+        if typeof destination == 'number'
+            destinationOffset = destination
+        else        
+            destinationOffset = destination.getBoundingClientRect().top + window.scrollY
+            
         documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight)
         windowHeight = window.innerHeight or document.documentElement.clientHeight or document.getElementsByTagName('body')[0].clientHeight
         return Math.round(if documentHeight - destinationOffset < windowHeight then documentHeight - windowHeight else destinationOffset)
@@ -76,6 +72,17 @@ vanillautilmodule.scrollTo = (destination, duration = 400, easing = 'easeInOutQu
   
     scroll()
     return
-#endregion
 
-module.exports = vanillautilmodule
+############################################################
+export shuffleArray = (array) ->
+    currentIndex = array.length
+
+    while (0 != currentIndex)
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--
+
+        replaced = array[currentIndex]
+        array[currentIndex] = array[randomIndex]
+        array[randomIndex] = replaced
+
+    return array;

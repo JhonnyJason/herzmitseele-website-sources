@@ -3,11 +3,11 @@ html(lang="de")
     head
         meta(charset='utf-8')
         title Herzmitseele - Impressum
-        meta(name='description', content='Mag. Sonja Louven ist deine persönliche Rednerin für deinen ganz besonderen Anlass. Hier das Impressum der Website.')
+        meta(name='description', content='Hier das Impressum mit Kontaktdaten und Credits.')
 
         //- Open Graph meta Tags
         meta(property='og:title' content='Herzmitseele - Impressum')
-        meta(property='og:description' content='Mag. Sonja Louven ist deine persönliche Rednerin für deinen ganz besonderen Anlass. Hier das Impressum der Website.')
+        meta(property='og:description' content='Hier das Impressum mit Kontaktdaten und Credits.')
 
         meta(property='og:type' content='website')
         meta(property='og:image' content='https://herzmitseele.at/img/logo.svg')
@@ -27,5 +27,6 @@ html(lang="de")
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         
         include styles-include.pug
+    body
+        include ../../source/impressum/impressumbody.pug
         include scripts-include.pug
-    include ../../source/impressum/impressumbody.pug

@@ -1,14 +1,9 @@
-debugmodule = {name: "debugmodule", uimodule: false}
+import { addModulesToDebug } from "thingy-debug"
 
-#####################################################
-debugmodule.initialize = () ->
-    # console.log "debugmodule.initialize - nothing to do"
-    return
-
-debugmodule.modulesToDebug = 
-    unbreaker: true
-    # configmodule: true
+############################################################
+export modulesToDebug = {
     # headermodule: true
+}
+    
 
-
-export default debugmodule
+addModulesToDebug(modulesToDebug)    

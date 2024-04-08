@@ -2,36 +2,36 @@
 #footer
     #footer-content.max-content
 
-        #contact-block
-            h1 Kontakt
+        #contact-block(itemscope itemtype="http://schema.org/PostalAddress")
+            h2 Kontakt
             p.footer-contact-line Mag. Sonja Louven
             p.footer-contact-line Tel: 
-                a(href="tel:+436643282007") +43 664 328 20 07
+                a(href="tel:+436643282007" itemprop="telephone") +43 664 328 20 07
             p.footer-contact-line E-Mail: 
-                a(href="mailto:rede@herzmitseele.at?subject=Kontakt") rede@herzmitseele.at
+                a(href="mailto:rede@herzmitseele.at?subject=Kontakt" itemprop="email") rede@herzmitseele.at
                 <br>
                 span.warning Hinweis: Bitte überprüft Euren Spamordner, falls ihr auf eine Antwort wartet.
             #contact-address
-                p.footer-address-line Fraungruberstraße 9
-                p.footer-address-line A-8044 Graz
+                p.footer-address-line(itemprop="streetAddress") Fraungruberstraße 9
+                p.footer-address-line(itemprop="addressLocality") A-8044 Graz, Österreich
 
         #social-media-block
             #social-media-icons
-                a#instagram-icon(href="https://www.instagram.com/herzmitseele.freierede/" target="_blank")
+                a#instagram-icon(href="https://www.instagram.com/herzmitseele.freierede/" target="_blank" aria-label="Icon mit Verlinkung auf den Instagramm Account.")
             #decoration-claim 
 
         #badge-block
-            a#badge-wedding-austria-new(href="https://www.austriawedding.at/hochzeit-inspiration-oesterreich/mountain-elopement-heiraten-am-fusse-des-grimming" target="_blank")
-            a#badge-wedding-austria(href="https://www.austriawedding.at/freie-trauung-hochzeitsredner-oesterreich/herz-mit-seele" target="_blank")
-            a#badge-wedding-stmk(href="https://www.steiermarkwedding.at/freie-trauung-steiermark/herz-mit-seele" target="_blank")
-            a#badge-boho(href="https://www.boho-weddings.com/" target="_blank")
+            a#badge-wedding-austria-new(href="https://www.austriawedding.at/hochzeit-inspiration-oesterreich/mountain-elopement-heiraten-am-fusse-des-grimming" target="_blank" aria-label="Badge mit Verlinkung auf eine Wedding-Austria Seite für Hochzeitsinspirationen.")
+            a#badge-wedding-austria(href="https://www.austriawedding.at/freie-trauung-hochzeitsredner-oesterreich/herz-mit-seele" target="_blank" aria-label="Badge mit Verlinkung auf eine Wedding-Austria Seite für Hochzeitsredner.")
+            a#badge-wedding-stmk(href="https://www.steiermarkwedding.at/freie-trauung-steiermark/herz-mit-seele" target="_blank" aria-label="Badge mit Verlinkung auf eine Wedding-Steiermakr Seite für freie Trauungen.")
+            a#badge-boho(href="https://www.boho-weddings.com/" target="_blank" aria-label="Badge mit Verlinkung auf die Boho-Weddings Homepage.")
 
         #footer-links-block
             p.footer-links.notes
                 a#impressum-link(href="/impressum.html") Impressum
                 //- a#datenschutz-link(href="/AAB-HerzmitSeele.pdf"  target="_blank") AAB
                 a#datenschutz-link(href="/Datenschutzerklärung-HerzmitSeele.pdf"  target="_blank") Datenschutzerklärung
-                a#datenschutz-link(href="/Widerrufsbelehrung-HerzmitSeele.pdf"  target="_blank") Widerrufsbelehrung
+                a#withdrawal-right-link(href="/Widerrufsbelehrung-HerzmitSeele.pdf"  target="_blank") Widerrufsbelehrung
 
         #up-button-block
             #up-button
@@ -39,6 +39,6 @@
                     polygon(points='48.05 25.84 24.03 0 0 25.84 7.74 33.04 18.75 21.2 18.75 49.92 29.31 49.92 29.31 21.2 40.32 33.04 48.05 25.84')
 
         #copyright-block
-            p#copyright-line.notes Copyright 2020
+            p#copyright-line.notes Copyright 2024
             p#designory-label.notes Webdesign by 
                 a(href="https://www.va-designory.at/") Visual Art Designory

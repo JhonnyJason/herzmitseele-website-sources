@@ -3,12 +3,12 @@ html(lang="de")
     head
         meta(charset='utf-8')
 
-        title Herz mit Seele
-        meta(name='description', content='Mag. Sonja Louven ist deine persönliche Rednerin für deinen ganz besonderen Anlass. Hier erfährst du mehr über mein Angebot.')
+        title Herz mit Seele - Freie Rednerin
+        meta(name='description', content='Mag. Sonja Louven ist deine persönliche Rednerin für deinen ganz besonderen Anlass. Sei es Euere Hochzeit, die Willkommensfeier Ihres Kindes oder die Abschiedszeremonie eines geliebten Menschen. Hier erfährst du mehr über mein Angebot.')
 
         //- Open Graph meta Tags
-        meta(property='og:title' content='Herz mit Seele')
-        meta(property='og:description' content='Mag. Sonja Louven ist deine persönliche Rednerin für deinen ganz besonderen Anlass. Hier erfährst du mehr über mein Angebot.')
+        meta(property='og:title' content='Herz mit Seele - Freie Rednerin')
+        meta(property='og:description' content='Mag. Sonja Louven ist deine persönliche Rednerin für deinen ganz besonderen Anlass. Sei es Euere Hochzeit, die Willkommensfeier Ihres Kindes oder die Abschiedszeremonie eines geliebten Menschen. Hier erfährst du mehr über mein Angebot.')
 
         meta(property='og:type' content='website')
         meta(property='og:image' content='https://herzmitseele.at/img/logo.svg')
@@ -28,5 +28,6 @@ html(lang="de")
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         
         include styles-include.pug
+    body
+        include ../../source/index/indexbody.pug
         include scripts-include.pug
-    include ../../source/index/indexbody.pug
