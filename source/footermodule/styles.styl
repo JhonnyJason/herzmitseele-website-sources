@@ -27,6 +27,7 @@ Serious Stuff
     .warning
         color #4f4f4f
         font-size: 11pt
+
 #footer-content
     padding-top footer-content-padding-top
     padding-bottom footer-content-padding-bottom
@@ -88,13 +89,13 @@ Grid Blocks
 #badge-block
     display flex
     flex-wrap: wrap
+    gap 12px 30px
     justify-content: flex-end
+    margin-top 12px
     a
         border-radius 50%
         height 150px
         width 150px
-        margin-left 30px
-        margin-top 12px
 
     #badge-wedding-austria-new
         background-size: contain
@@ -115,8 +116,10 @@ Grid Blocks
 
 #footer-links-block
     align-self: end
-    a
-        margin-right 7px
+    .footer-links
+        display flex
+        justify-content: flex-start
+        gap 0 7px
 
 #up-button-block
     justify-self: center
@@ -156,7 +159,8 @@ min-width-for-full-grid = ((2 * edge-column-min-width) + center-column-width + (
     #more-information-block
         text-align: center
     #footer-links-block
-        text-align: center
+        .footer-links
+            justify-content: center
     
     #badge-block
         justify-content: center

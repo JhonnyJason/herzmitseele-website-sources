@@ -1,4 +1,8 @@
 //- structure
 #callmeandmailme.inner-content
-    a#mailmebutton(href="mailto:rede@herzmitseele.at?subject=Anfrage") E-Mail
-    a#callmebutton(href="tel:+436643282007") Anruf
+    a#callmebutton(href="tel:+436643282007") 
+        svg#callmebutton-icon: use(href="#svg-phone-icon")
+        | Anruf
+    a#mailmebutton(href="mailto:rede@herzmitseele.at?subject=Anfrage")
+        svg#mailmebutton-icon: use(href="#svg-email-icon") 
+        | E-Mailanfrage

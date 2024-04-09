@@ -33,9 +33,13 @@ Specific Style Overwrites
     background-image: url("/img/trauer.jpg")
 
 audio::-webkit-media-controls-panel
-    background-color: service-theme-color
+    background-color: alpha(service-theme-color,0.4)
 
 /*==========================================================
 Component Styles
 ==========================================================*/
 @import 'components/expectations/styles.styl'
+
+#contact-block
+    .warning
+        color #999
