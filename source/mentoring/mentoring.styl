@@ -11,9 +11,9 @@ Global styles
 /*==========================================================
 Specific Variable Definitions
 ==========================================================*/
-header-color = cd-violett
-footer-background = cd-violett
-service-theme-color = cd-violett
+service-theme-color = cd-paleblue
+header-color = service-theme-color
+footer-background = service-theme-color
 
 decoration-sun-url = url("/img/decoration-sun-violett.svg")
 /*=========================================================
@@ -27,7 +27,7 @@ Specific Style Overwrites
 // here it is very ok to use !important
 #menu-link-mentoring
     font-weight bold
-    color cd-violett !important
+    color service-theme-color !important
 
 #banner-image-row
     background-image: url("/img/mentoring.jpg")
@@ -61,17 +61,17 @@ Component Styles
 Serviceofferlistings
 ==========================================================*/
 #service-listing > * 
-    border-top solid 2px cd-violett
+    border-top solid 2px service-theme-color
     // border-right solid 2px cd-violett
     // border-bottom solid 2px cd-violett
-    border-left solid 2px cd-violett
+    border-left solid 2px service-theme-color
     padding-top 30px
     padding-bottom 20px
     // margin-bottom 90px
 
 #service-listing > div:nth-child(2n)
     // border-top solid 2px cd-violett
-    border-right solid 2px cd-violett
+    border-right solid 2px service-theme-color
     // border-bottom solid 2px cd-violett
     border-left none
 
