@@ -39,6 +39,7 @@ onScroll = ->
     log "onScroll"
     return if isCollapsed
     menu.classList.add("collapsed")
+    menuServices.classList.remove("active")
     isCollapsed = true
     return
 
@@ -57,8 +58,9 @@ kontaktClicked = ->
     return
 
 ###################################################################
-menuServicesClicked = ->
+menuServicesClicked = (evnt) ->
     log "menuServicesClicked"
+    # return unless evnt.target == menuServices
     menuServices.classList.toggle("active")
     return
 

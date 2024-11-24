@@ -23,10 +23,11 @@ minimal-menu-width = 800px
     background-position center
     margin auto
     margin-top logo-top-spacing
-    margin-bottom logo-to-menu-gap
+    margin-bottom logo-to-menu-gap - 20px
 
 #menu
     display: grid
+    // align-items: center
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
     margin-bottom menu-to-banner-gap - 7px
     #burger
@@ -40,25 +41,32 @@ minimal-menu-width = 800px
 
 
     .menu-link
-        display block
+        // display block
         text-transform: uppercase
         font-size: 14pt
         text-align: center
         padding 7px 0
-        width 100%
+        padding-top 20px
+        align-self center
+        justify-self: center
         // color #909090
 
 #menu-services
     position relative
     cursor: pointer
+    text-align: center
+    justify-self: center
+    align-self: center
+    width 100%
+    padding 7px 0
+    padding-top 20px
 
-
-#menu-services:hover
+// #menu-services:hover
 #menu-services.active
+    background #fbfbfb
     #menu-link-services
         font-weight: bold
         color #3339
-        background #fbfbfb
 
     .submenu-frame
         opacity 1
@@ -68,7 +76,7 @@ minimal-menu-width = 800px
 .submenu-frame
     position absolute
     left 0
-    top 35px
+    top 45px
     width 100%
     box-sizing: border-box
     padding 20px
@@ -83,6 +91,8 @@ minimal-menu-width = 800px
 
     border-radius 0 0 3px 3px
     background #fbfbfb
+    .menu-link
+        width fit-content
 
 #banner-image-row
     height 440px
@@ -111,11 +121,11 @@ minimal-menu-width = 800px
 @media screen and (max-width: minimal-menu-width)
     #menu
         grid-template-columns: 1fr
-        // .menu-link
-        //     text-align: center
+        .menu-link
+        #menu-services
+            padding-top 10px
+
         // .submenu-frame
-        //     .menu-link
-        //         text-align: left
 
     #menu.collapsed
         #menu-services
