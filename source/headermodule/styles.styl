@@ -9,7 +9,7 @@ page-quote-row-padding-bottom = 20px
 page-quote-to-signature-gap = 20px
 burger-size = 30px
 
-minimal-menu-width = 900px
+minimal-menu-width = 800px
 
 #header
     background-color white
@@ -26,19 +26,63 @@ minimal-menu-width = 900px
     margin-bottom logo-to-menu-gap
 
 #menu
-    display: flex
-    justify-content: space-between
-    margin-bottom menu-to-banner-gap
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    margin-bottom menu-to-banner-gap - 7px
     #burger
         display: none
-        background-image: url(/img/burger-icon.svg)
+        // background-image: url(/img/burger-icon.svg)
         width: burger-size
         height: burger-size
+        svg
+            width: burger-size
+            height: burger-size
+
 
     .menu-link
+        display block
         text-transform: uppercase
         font-size: 14pt
+        text-align: center
+        padding 7px 0
+        width 100%
         // color #909090
+
+#menu-services
+    position relative
+    cursor: pointer
+
+
+#menu-services:hover
+#menu-services.active
+    #menu-link-services
+        font-weight: bold
+        color #3339
+        background #fbfbfb
+
+    .submenu-frame
+        opacity 1
+        z-index 1
+        pointer-events: all
+        
+.submenu-frame
+    position absolute
+    left 0
+    top 35px
+    width 100%
+    box-sizing: border-box
+    padding 20px
+
+    display flex
+    flex-direction: column
+
+    transition: opacity 0.3s
+    opacity 0
+    z-index -1
+    pointer-events: none
+
+    border-radius 0 0 3px 3px
+    background #fbfbfb
 
 #banner-image-row
     height 440px
@@ -66,13 +110,17 @@ minimal-menu-width = 900px
 
 @media screen and (max-width: minimal-menu-width)
     #menu
-        flex-direction: column
-        .menu-link
-            padding: 10px
-            text-align: center
+        grid-template-columns: 1fr
+        // .menu-link
+        //     text-align: center
+        // .submenu-frame
+        //     .menu-link
+        //         text-align: left
+
     #menu.collapsed
+        #menu-services
         .menu-link
-            display: none
+            display: none            
         #burger
             display inline-block
             text-align center

@@ -13,6 +13,8 @@ menu = null
 contactBlock = null
 contactLink = null
 
+###################################################################
+menuServices = document.getElementById("menu-services")
 
 ###################################################################
 isCollapsed = false
@@ -25,6 +27,7 @@ export initialize = ->
     contactLink = document.getElementById("menu-link-kontakt")
 
     contactLink.addEventListener("click", kontaktClicked)
+    menuServices.addEventListener("click", menuServicesClicked)
 
     document.addEventListener("scroll", onScroll)
     menu.addEventListener("click", menuClicked)
@@ -51,6 +54,12 @@ kontaktClicked = ->
     contactBlock.classList.add("lit")
     utl.scrollTo(contactBlock)
     setTimeout(unlitContactBlock, 800)
+    return
+
+###################################################################
+menuServicesClicked = ->
+    log "menuServicesClicked"
+    menuServices.classList.toggle("active")
     return
 
 unlitContactBlock = ->
