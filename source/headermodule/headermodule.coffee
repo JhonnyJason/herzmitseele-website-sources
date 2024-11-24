@@ -27,7 +27,7 @@ export initialize = ->
     contactLink = document.getElementById("menu-link-kontakt")
 
     contactLink.addEventListener("click", kontaktClicked)
-    # menuServices.addEventListener("click", menuServicesClicked)
+    menuServices.addEventListener("click", menuServicesClicked)
 
     document.addEventListener("scroll", onScroll)
     menu.addEventListener("click", menuClicked)
