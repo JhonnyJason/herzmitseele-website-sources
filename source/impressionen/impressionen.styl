@@ -11,7 +11,7 @@ Global Styles
 /*==========================================================
 Specific Variable Definitions
 ==========================================================*/
-service-theme-color = cd-eucalyptusgreen
+service-theme-color = cd-winered
 header-color = service-theme-color
 footer-background = service-theme-color
 
@@ -21,21 +21,29 @@ All Module Styles
 @import '../allmodules/allstyles.styl'
 
 /*==========================================================
+lightgallery styles
+==========================================================*/
+@import "../../../node_modules/lightgallery/css/lightgallery-bundle.css"
+
+/*==========================================================
 Specific Style Overwrites
 ==========================================================*/
-#menu-link-ubermich
+#menu-link-impressionen
     font-weight bold
     color service-theme-color !important
 
 #banner-image-row
-    background-image url("/img/ubermich.jpg")
-    background-position: top !important
+    background-image url("/img/impressionen.jpg")
 
-@media screen and (max-width: 600px)
-    #banner-image-row
-        background-position: right !important
+#footer
+    span.warning
+        color #7f8f8f !important
+
+.callmeandmailme
+    a
+        background-color: alpha(cd-winered, 0.05) !important
 
 /*==========================================================
 Component Styles
 ==========================================================*/
-@import 'components/aboutme/styles.styl'
+@import 'components/styles.styl'
