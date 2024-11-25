@@ -11,9 +11,12 @@ Global styles
 /*==========================================================
 Specific Variable Definitions
 ==========================================================*/
-header-color = cd-altrosa
-footer-background = cd-altrosa
-service-theme-color = cd-altrosa
+// header-color = cd-altrosa
+// footer-background = cd-altrosa
+// service-theme-color = cd-altrosa
+header-color = cd-winered
+footer-background = cd-winered
+service-theme-color = cd-winered
 
 decoration-sun-url = url("/img/decoration-sun-freietrauung.svg")
 /*=========================================================
@@ -32,10 +35,21 @@ Specific Style Overwrites
 #banner-image-row
     background-image: url("/img/trauung.jpg")
 
-audio::-webkit-media-controls-panel
-    background-color: service-theme-color
+// audio::-webkit-media-controls-panel
+//     background-color: service-theme-color
+
+
+.callmeandmailme
+    a
+        background-color: alpha(cd-winered, 0.05) !important
+
+#footer
+    span.warning
+        color #7f8f8f !important
+
 
 /*=========================================================
 Component Styles
 =========================================================*/
 @import 'components/expectations/styles.styl'
+@import 'components/video/styles.styl'
