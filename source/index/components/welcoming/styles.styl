@@ -56,7 +56,7 @@ The Serious Stuff
 
 
     #welcoming-image
-        border-radius 150px 150px 0 0
+        border-radius 150px 150px 3px 3px
         width 300px
         height 480px
         box-sizing: border-box
@@ -71,15 +71,16 @@ The Serious Stuff
         // border solid 4px cd-winered
         // box-shadow: 0px 0px 6px service-theme-color
         // border solid 4px service-theme-color
+        box-shadow: 0px 2px 4px service-theme-color
         object-fit: cover
         transition: box-shadow 0.3s
 
 
-    // #welcoming-image:hover
-    //     // transform: scale(1.1)
-    //     // filter: contrast(110%)
-    //     // border solid 6px cd-winered
-    //     box-shadow: 0px 0px 10px service-theme-color
+    #welcoming-image:hover
+        // transform: scale(1.1)
+        // filter: contrast(110%)
+        // border solid 6px cd-winered
+        box-shadow: 0px 2px 7px service-theme-color
         
     a
         font-weight: bold
@@ -107,5 +108,6 @@ The Serious Stuff
 @media screen and (max-width: 350px)
     #welcoming-intro-content
         #welcoming-image
+            border-radius 120px 120px 0 0
             width 240px
-            height 240px
+            height 360px
