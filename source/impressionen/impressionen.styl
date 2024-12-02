@@ -34,7 +34,11 @@ Specific Style Overwrites
 
 #banner-image-row
     background-image url("/img/impressionen.jpg")
-    background-position: top right !important
+    background-position: top right
+
+@media screen and (max-width: 600px)
+    #banner-image-row
+        background-position: 70%
 
 #footer
     span.warning
