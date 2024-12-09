@@ -24,13 +24,14 @@ decoration-image-url = decoration-sun-url
 Serious Stuff 
 =====================================================*/
 #expectationofday
-    h2
+    h3
         @extends h1
         @extends .cd-title
         color service-theme-color
         font-weight bold
         margin-bottom title-to-day-expectation-gap
         text-align center
+    
     p
         @extends .cd-text
         line-height: 150%
@@ -54,6 +55,8 @@ Serious Stuff
         margin 0
     p
         padding 0 20px
+        max-width 600px
+        margin auto
 #expectation-cost-hint
     width 100%
     position absolute
@@ -70,6 +73,7 @@ Serious Stuff
     text-align center
     h2
         @extends h1
+        font-family: "OpenSans"
         color: service-theme-color
         font-weight bold
         padding 0
