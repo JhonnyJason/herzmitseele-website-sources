@@ -28,7 +28,7 @@ minimal-menu-width = 920px
 #menu
     display: grid
     // align-items: center
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 260px  1fr 1fr
     margin-bottom menu-to-banner-gap - 7px
     #burger
         display: none
@@ -46,6 +46,7 @@ minimal-menu-width = 920px
         font-family: "NotoSerif"
         text-transform: uppercase
         font-size: 14pt
+        letter-spacing: 0.7pt
         text-align: center
         padding 7px 0
         padding-top 20px
@@ -60,11 +61,12 @@ minimal-menu-width = 920px
     justify-self: center
     align-self: center
     width 100%
+    box-sizing: border-box
     padding 7px 18px
     padding-top 20px
 
 #menu-services.active
-    background #fbfbfb
+    background alpha(#fbfbfb, 0.8)
     #menu-link-services
         font-weight: bold
         color #3339
@@ -91,7 +93,7 @@ minimal-menu-width = 920px
     pointer-events: none
 
     border-radius 0 0 3px 3px
-    background #fbfbfb
+    background alpha(#fbfbfb, 0.8) 
     .menu-link
         width fit-content
 
@@ -141,12 +143,12 @@ minimal-menu-width = 920px
 @media (hover: hover)
     #menu
         #menu-services:hover
-            background #fbfbfb
+            background alpha(#fbfbfb, 0.8)
             #menu-link-services
                 font-weight: bold
                 color #3339
 
             .submenu-frame
-                opacity 1
+                opacity: 1
                 z-index 1
                 pointer-events: all
