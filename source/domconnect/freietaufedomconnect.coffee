@@ -1,10 +1,10 @@
-freietaufedomconnect = {name: "freietaufedomconnect"}
+willkommensfeierdomconnect = {name: "willkommensfeierdomconnect"}
 
 ############################################################
-freietaufedomconnect.initialize = () ->
+willkommensfeierdomconnect.initialize = () ->
     global.contactBlock = document.getElementById("contact-block")
     global.upButton = document.getElementById("up-button")
     global.videoFrame = document.getElementById("video-frame")
     return
     
-module.exports = freietaufedomconnect
+module.exports = willkommensfeierdomconnect
