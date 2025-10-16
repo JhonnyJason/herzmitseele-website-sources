@@ -1,7 +1,7 @@
 module.exports = {
     getDependencies: () => {
         return {
-            "lightgallery": "^2.8.3"        
+            "lightgallery": "^2.9.0"        
         }
     }
 }
