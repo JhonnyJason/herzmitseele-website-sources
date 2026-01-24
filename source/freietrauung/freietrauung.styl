@@ -11,12 +11,11 @@ Global styles
 /*==========================================================
 Specific Variable Definitions
 ==========================================================*/
-// header-color = cd-altrosa
-// footer-background = cd-altrosa
 // service-theme-color = cd-altrosa
-header-color = cd-winered
-footer-background = cd-winered
-service-theme-color = cd-winered
+// service-theme-color = cd-winered
+service-theme-color = cd-eucalyptusgreen
+header-color = service-theme-color
+footer-background = service-theme-color
 
 decoration-sun-url = url("/img/decoration-sun-freietrauung.svg")
 /*=========================================================
@@ -35,8 +34,8 @@ Specific Style Overwrites
 #banner-image-row
     background-image: url("/img/trauung.jpg")
 
-// audio::-webkit-media-controls-panel
-//     background-color: service-theme-color
+audio::-webkit-media-controls-panel
+    background-color: alpha(service-theme-color, 0.4)
 
 #loveyou-heart
     height 14pt
@@ -49,17 +48,17 @@ Specific Style Overwrites
     // margin-top 10px
     // display block
 
-.callmeandmailme
-    a
-        background-color: alpha(service-theme-color, 0.05) !important
+// .callmeandmailme
+//     a
+//         background-color: alpha(service-theme-color, 0.05) !important
 #servicedescription-description
     h2
         margin-top 30px
     h2:nth-child(1)
         margin-top 0
-#footer
-    span.warning
-        color #7f8f8f !important
+// #footer
+//     span.warning
+//         color #7f8f8f !important
 
 
 /*=========================================================
