@@ -9,9 +9,60 @@ welcoming-spacing-bottom = 40px
 /*=====================================================
 The Serious Stuff
 =====================================================*/
+#top-block
+    margin-top 60px
+    margin-bottom 150px
+    display flex
+    gap 40px
+
+    #top-block-left
+    #top-block-right
+        position relative
+        width 50%
+    h2
+        // text-align: center
+        text-align: left
+        margin-bottom 33px
+        font-family: "NotoSerif"
+
+    p
+        // @extends .cd-alone-text
+        // font-size: 12pt
+        font-size: 11pt
+        // text-align center
+        text-align left
+        max-width: 380px
+        // margin auto
+        // letter-spacing 1.8pt
+        margin-bottom 15px
+
+    #decoration-logo
+        position absolute
+        bottom 0
+        right 25%
+        background-image url("/img/logo.svg")
+        height 60px
+        width 120px
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+        margin auto
+
+
+#video-frame
+    display block
+    // max-height 700px
+    // width 50%
+    width 100%
+    max-height 600px
+    object-fit: cover
+    object-position: center 40%
+
+
 #welcoming-intro-content
     margin-top welcoming-spacing-top
     line-height 170%
+    margin-bottom 150px
     h1
         @extends .cd-alone-text
         font-size: 12pt
@@ -20,11 +71,6 @@ The Serious Stuff
         text-align center
         // // letter-spacing: 2.5pt
         margin-bottom 7px
-    h2
-        text-align: center
-        margin-bottom 33px
-        font-family: "NotoSerif"
-        // letter-spacing: normal
     p
         // @extends .cd-alone-text
         // font-size: 12pt
@@ -36,8 +82,7 @@ The Serious Stuff
         margin-bottom 15px
 
     #instagram-paragraph
-        margin-top 50px
-
+        margin-top 00px
     // #welcoming-image
     //     border-radius 50%
     //     width 300px
@@ -67,7 +112,7 @@ The Serious Stuff
         // max-height 330px
         // max-width calc(100% - 30px)
         margin auto
-        margin-top 60px
+        margin-top 30px
         display block
         // border solid 3px cd-hellgrau
         // box-shadow: 0px 0px 6px cd-winered
@@ -92,6 +137,7 @@ The Serious Stuff
 
 #welcoming-outro-content
     margin-top welcoming-spacing-top
+    max-width 680px
     p
         @extends .cd-alone-text
         // font-size: 12pt
@@ -109,6 +155,28 @@ The Serious Stuff
     a
         font-weight: bold
         text-decoration: underline
+
+@media screen and (max-width: 730px)
+    #top-block
+        flex-direction: column
+        gap 60px
+        justify-content: center
+        align-items: center
+        #top-block-left
+        #top-block-right
+            width 90%
+        h2
+            text-align: center
+
+        p
+            text-align center
+            max-width: 600px
+
+        #decoration-logo
+            margin auto
+            margin-top 60px
+            position static
+
 
 @media screen and (max-width: 350px)
     #welcoming-intro-content
