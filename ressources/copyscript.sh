@@ -22,5 +22,6 @@ cp sources/ressources/Widerrufsbelehrung-HerzmitSeele.pdf output/Widerrufsbelehr
 cp sources/ressources/AAB-HerzmitSeele.pdf output/AAB-HerzmitSeele.pdf
 cp sources/ressources/favicons/* output/
 cp sources/ressources/manifests/* output/
+cp sources/ressources/seo/* output/
 
 echo 0
