@@ -1,0 +1,10 @@
+article.testimonial-card(itemscope itemtype="https://schema.org/Review")
+    
+    blockquote.testimonial-card-quote
+        p.testimonial-card-body(itemprop="reviewBody")
+            block review-body
+    
+    footer.testimonial-card-footer
+        cite.testimonial-card-author(itemprop="author" itemscope itemtype="https://schema.org/Person")
+            span(itemprop="name")
+                block name

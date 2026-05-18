@@ -2,11 +2,11 @@ doctype html
 html(lang="de")
     head
         meta(charset='utf-8')
-        title Über Mich
+        title Über Mich - Ihre persönliche freie Rednerin
         meta(name='description', content='Mag. Sonja Louven ist eine leidenschaftliche Rednerin und Schreiberin. Hier erfährst du mehr über mich :-).')
 
         //- Open Graph meta Tags
-        meta(property='og:title' content='Über Mich')
+        meta(property='og:title' content='Über Mich - Ihre persönliche freie Rednerin')
         meta(property='og:description' content='Mag. Sonja Louven ist eine leidenschaftliche Rednerin und Schreiberin. Hier erfährst du mehr über mich :-).')
 
         meta(property='og:type' content='website')
@@ -27,6 +27,70 @@ html(lang="de")
 
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         
+        script(type="application/ld+json").
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://herzmitseele.at/#website",
+                "url": "https://herzmitseele.at",
+                "name": "Herz mit Seele",
+                "inLanguage": "de"
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://herzmitseele.at/ubermich#webpage",
+                "url": "https://herzmitseele.at/ubermich",
+                "name": "Über Mich - Ihre persönliche freie Rednerin",
+                "description": "Mag. Sonja Louven ist eine leidenschaftliche Rednerin und Schreiberin. Hier erfährst du mehr über mich :-).",
+                "inLanguage": "de",
+                "isPartOf": { "@id": "https://herzmitseele.at/#website" }
+              },
+              {
+                "@type": "LocalBusiness",
+                "@id": "https://herzmitseele.at/#business",
+                "name": "Herz mit Seele",
+                "alternateName": "HERZMITSEELE - FREIE TRAUUNG - DESTINATION WEDDING - TRAUREDNERIN - WILLKOMMENSFEIER - TRAUERREDE",
+                "description": "Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.",
+                "url": "https://herzmitseele.at",
+                "telephone": "+43 664 3282007",
+                "email": "rede@herzmitseele.at",
+                "image": "https://herzmitseele.at/img/avatar-home-square.png",
+                "logo": "https://herzmitseele.at/img/logo.svg",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Fraungruberstraße 9",
+                  "addressLocality": "Graz",
+                  "postalCode": "8044",
+                  "addressCountry": "AT"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5.0",
+                  "reviewCount": "90",
+                  "bestRating": "5"
+                },
+                "founder": {
+                  "@type": "Person",
+                  "name": "Mag. Sonja Louven",
+                  "jobTitle": "Freie Rednerin und Traurednerin",
+                  "url": "https://herzmitseele.at/ubermich",
+                  "sameAs": [
+                    "https://www.instagram.com/herzmitseele.freierede/"
+                  ]
+                },
+                "sameAs": [
+                  "https://www.instagram.com/herzmitseele.freierede/",
+                  "https://www.austriawedding.at/hochzeit-inspiration-oesterreich/mountain-elopement-heiraten-am-fusse-des-grimming",
+                  "https://www.austriawedding.at/freie-trauung-hochzeitsredner-oesterreich/herz-mit-seele",
+                  "https://www.steiermarkwedding.at/freie-trauung-steiermark/herz-mit-seele",
+                  "https://www.boho-weddings.com/214060/for-the-love-of-dahlias-sustainable-flower-wedding-inspiration/"
+                ]
+              }
+            ]
+          }
+
         include styles-include.pug
     body
         include ../../source/ubermich/ubermichbody.pug

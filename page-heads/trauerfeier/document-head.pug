@@ -27,7 +27,114 @@ html(lang="de")
 
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
                 
+        script(type="application/ld+json").
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://herzmitseele.at/#website",
+                "url": "https://herzmitseele.at",
+                "name": "Herz mit Seele",
+                "inLanguage": "de"
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://herzmitseele.at/trauerfeier#webpage",
+                "url": "https://herzmitseele.at/trauerfeier",
+                "name": "Freie Rednerin für Abschiede und Trauerfeiern - Trauerrede",
+                "description": "Du suchst eine professionelle Rednerin für eine persönliche Trauerrede und eine würdevolle Abschiedszeremonie? Hier bist Du genau richtig! Erfahre mehr über mein Angebot, den Ablauf und die Kosten einer freien Trauerfeier.",
+                "inLanguage": "de",
+                "isPartOf": { "@id": "https://herzmitseele.at/#website" }
+              },
+              {
+                "@type": "LocalBusiness",
+                "@id": "https://herzmitseele.at/#business",
+                "name": "Herz mit Seele",
+                "alternateName": "HERZMITSEELE - FREIE TRAUUNG - DESTINATION WEDDING - TRAUREDNERIN - WILLKOMMENSFEIER - TRAUERREDE",
+                "description": "Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.",
+                "url": "https://herzmitseele.at",
+                "telephone": "+43 664 3282007",
+                "email": "rede@herzmitseele.at",
+                "image": "https://herzmitseele.at/img/avatar-home-square.png",
+                "logo": "https://herzmitseele.at/img/logo.svg",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Fraungruberstraße 9",
+                  "addressLocality": "Graz",
+                  "postalCode": "8044",
+                  "addressCountry": "AT"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5.0",
+                  "reviewCount": "90",
+                  "bestRating": "5"
+                },
+                "founder": {
+                  "@type": "Person",
+                  "name": "Mag. Sonja Louven",
+                  "jobTitle": "Freie Rednerin und Traurednerin",
+                  "url": "https://herzmitseele.at/ubermich",
+                  "sameAs": [
+                    "https://www.instagram.com/herzmitseele.freierede/"
+                  ]
+                },
+                "sameAs": [
+                  "https://www.instagram.com/herzmitseele.freierede/",
+                  "https://www.austriawedding.at/hochzeit-inspiration-oesterreich/mountain-elopement-heiraten-am-fusse-des-grimming",
+                  "https://www.austriawedding.at/freie-trauung-hochzeitsredner-oesterreich/herz-mit-seele",
+                  "https://www.steiermarkwedding.at/freie-trauung-steiermark/herz-mit-seele",
+                  "https://www.boho-weddings.com/214060/for-the-love-of-dahlias-sustainable-flower-wedding-inspiration/"
+                ]
+              }
+            ]
+          }
+
         include styles-include.pug
     body
         include ../../source/trauerfeier/trauerfeierbody.pug
         include scripts-include.pug
+
+
+        //- "review": [
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Carina Poschned"
+        //-     },
+        //-     "reviewBody": "Als ich eine Trauerrednerin oder einen Trauerredner für das Begräbnis meines Vaters gesucht habe, war ich sehr kritisch. Ich wusste,ich will eine Person, die er auch gemocht hätte. Die sympathisch und humorvoll ist und doch für so einen traurigen Anlass die richtigen Worte findet. Nach einer längeren Suche bin ich dann auf Sonja gestoßen und habe schnell gemerkt, dass bei uns die Chemie stimmt. Wir hatten schnell eine gemeinsame Idee, wie die Trauerfeier ablaufen sollte. Mit vielen Anekdoten über meinen Vater, aber nicht zu düster. Wir wollten sein Leben feiern - anstatt nur seinen Tod zu betrauern. Aus der Fülle an Informationen, die Sonja von mir bekommen hat, hat sie eine berührende Rede geschrieben. Zudem hat sie mich in den Vorbereitungen noch auf weitere Ideen für die Trauerfeier gebracht und war immer erreichbar und hilfsbereit. Sie hat mich in meiner Trauer abgeholt und empathisch und liebevoll begleitet. Genau so eine Person möchte man in dieser Situation an seiner Seite wissen. Nach dem Begräbnis haben mich viele der weiteren Trauernden auf Sonja und ihre Rede angesprochen. Und so mancher hat auch gleich nach ihrer Homepage gefragt. Kurz gesagt: Ich kann Sonja wärmstens weiterempfehlen und bin sehr glücklich, sie für Papas Trauerfeier gefunden zu haben.",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Lisa Ha"
+        //-     },
+        //-     "reviewBody": "Sonja hat als Rednerin definitiv Ihre Berufung gefunden. Mit Ihrer emphatischen, ehrlichen und authentischen Art und Weise auf Menschen zuzugehen schafft Sie es jede Art von Rede, egal ob Hochzeit Trauer oder Taufe, individuell auf die Menschen anzupassen und dabei auch noch Ihr eigenes Herz mit einzubinden. Wenn man Sie trifft ist nichts gekünstelt sondern alles echt.  Ihr Logo Herzmitseele könnte nicht treffender sein!",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Nicole Spernbauer"
+        //-     },
+        //-     "reviewBody": "Sonja ist wirklich ein liebevoller, herzensguter Mensch und findet einfach IMMER die richtigen Worte. Große Überzeugung und Empfehlung von Herzen! <3",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     }
+        //- ],

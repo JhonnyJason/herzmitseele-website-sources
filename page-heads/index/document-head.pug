@@ -3,11 +3,11 @@ html(lang="de")
     head
         meta(charset='utf-8')
 
-        title Freie Rednerin und Traurednerin
+        title Ihre freie Rednerin für Ihre Hochzeit, Willkommensfeier oder Trauerfeier - Sonja Louven
         meta(name='description', content='Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.')
 
         //- Open Graph meta Tags
-        meta(property='og:title' content='Freie Rednerin und Traurednerin')
+        meta(property='og:title' content='Ihre freie Rednerin für Ihre Hochzeit, Willkommensfeier oder Trauerfeier - Sonja Louven')
         meta(property='og:description' content='Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.')
 
         meta(property='og:type' content='website')
@@ -28,7 +28,152 @@ html(lang="de")
 
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         
+        script(type="application/ld+json").
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://herzmitseele.at/#website",
+                "url": "https://herzmitseele.at",
+                "name": "Herz mit Seele",
+                "inLanguage": "de"
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://herzmitseele.at/#webpage",
+                "url": "https://herzmitseele.at",
+                "name": "Ihre freie Rednerin für Ihre Hochzeit, Willkommensfeier oder Trauerfeier - Sonja Louven",
+                "description": "Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.",
+                "inLanguage": "de",
+                "isPartOf": { "@id": "https://herzmitseele.at/#website" }
+              },
+              {
+                "@type": "LocalBusiness",
+                "@id": "https://herzmitseele.at/#business",
+                "name": "Herz mit Seele",
+                "alternateName": "HERZMITSEELE - FREIE TRAUUNG - DESTINATION WEDDING - TRAUREDNERIN - WILLKOMMENSFEIER - TRAUERREDE",
+                "description": "Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.",
+                "url": "https://herzmitseele.at",
+                "telephone": "+43 664 3282007",
+                "email": "rede@herzmitseele.at",
+                "image": "https://herzmitseele.at/img/avatar-home-square.png",
+                "logo": "https://herzmitseele.at/img/logo.svg",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Fraungruberstraße 9",
+                  "addressLocality": "Graz",
+                  "postalCode": "8044",
+                  "addressCountry": "AT"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5.0",
+                  "reviewCount": "90",
+                  "bestRating": "5"
+                },
+                "founder": {
+                  "@type": "Person",
+                  "name": "Mag. Sonja Louven",
+                  "jobTitle": "Freie Rednerin und Traurednerin",
+                  "url": "https://herzmitseele.at/ubermich",
+                  "sameAs": [
+                    "https://www.instagram.com/herzmitseele.freierede/"
+                  ]
+                },
+                "sameAs": [
+                  "https://www.instagram.com/herzmitseele.freierede/",
+                  "https://www.austriawedding.at/hochzeit-inspiration-oesterreich/mountain-elopement-heiraten-am-fusse-des-grimming",
+                  "https://www.austriawedding.at/freie-trauung-hochzeitsredner-oesterreich/herz-mit-seele",
+                  "https://www.steiermarkwedding.at/freie-trauung-steiermark/herz-mit-seele",
+                  "https://www.boho-weddings.com/214060/for-the-love-of-dahlias-sustainable-flower-wedding-inspiration/"
+                ]
+              }
+            ]
+          }
+
         include styles-include.pug
     body
         include ../../source/index/indexbody.pug
         include scripts-include.pug
+
+        //- "review": [
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Dominic Morocutti"
+        //-     },
+        //-     "reviewBody": "Als wir uns für eine freie Trauung entschieden haben, wussten wir noch nicht wirklich, was auf uns zukommen wird. Nachdem wir Sonja kennengelernt hatten, war uns sofort klar, dass wir unsere Traurednerin gefunden haben☺️ Sie hat sich beim persönlichen Gespräch sehr lange für uns Zeit genommen. Danach hatten wir so ein gutes Gefühl und waren uns sicher, dass wir uns zu 100% auf sie verlassen können. Genau so war es dann auch: Mit ihrer positiven Ausstrahlung, ihrer angenehmen Stimme und den wunderschönen Worten hat sie unsere Gäste und uns verzaubert✨ Ihre Rede hat nicht nur zu Tränen gerührt, sondern auch alle zum Lachen gebracht. Genau so haben wir uns das vorgestellt 🥰Liebe Sonja, deine Rede war das absolute Highlight unserer Hochzeit und wird uns für immer in Erinnerung bleiben. Vielen lieben Dank! ❤️ Teresa & Dominic",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Maria Prisching"
+        //-     },
+        //-     "reviewBody": "Mein Mann und ich haben uns ziemlich schnell gegen eine traditionelle Standesamttrauung entschieden und sind letztes Jahr auf freie Trauungen und dann ganz durch Zufall auf ein Video von Sonja auf Instagram gestoßen.Ich war sofort begeistert und musste auch nicht lange meinen Mann überzeugen. Das erste Telefonat war schon so sympathisch, dass man dort schon glaubte mit einer Freundin zu quatschen die man schon lange nicht gesehen hat. Die vollkommene Bestätigung der Sympathie und des Wohlfühlens mit Sonja als Person hatten wir dann bei unserem persönlichen Kennenlernen bzw. 4 stündigen Gespräch! Es war noch nie so einfach, jemanden eine so persönliche Geschichte zu erzählen und das obwohl sie uns vollkommen fremd war. Das Vertrauen war von Sekunde 1 da!Nach dem Gespräch wussten wir, dass die Trauung schön werden wird. Wir schön sie wirklich geworden ist kann man gar nicht in Worte fassen. Von jedem einzelnen Hochzeitsgast wurde uns mitgeteilt, dass das die schönste Trauung war, an der sie je teilnehmen durften. Die Rede von Sonja glich einer Emotionalen Achterbahnfahrt auf die wirklich jeder mitgenommen wurde und bei der niemand ein trockenes Auge hatte!Wir können sie von ganzem Herzen empfehlen und würden sie jeden Tag und zu jedem Preis wieder engagieren. Ihre Rede war das Herzstück unserer ganzen Hochzeitsfeier und wird uns für immer in Erinnerung bleiben.Wir sind uns auch schon einig, dass wir Sonja sehr gerne als Teil einer Willkommensfeier für unser hoffentlich zukünftiges Kind hätten.",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Carina Poschned"
+        //-     },
+        //-     "reviewBody": "Als ich eine Trauerrednerin oder einen Trauerredner für das Begräbnis meines Vaters gesucht habe, war ich sehr kritisch. Ich wusste,ich will eine Person, die er auch gemocht hätte. Die sympathisch und humorvoll ist und doch für so einen traurigen Anlass die richtigen Worte findet. Nach einer längeren Suche bin ich dann auf Sonja gestoßen und habe schnell gemerkt, dass bei uns die Chemie stimmt. Wir hatten schnell eine gemeinsame Idee, wie die Trauerfeier ablaufen sollte. Mit vielen Anekdoten über meinen Vater, aber nicht zu düster. Wir wollten sein Leben feiern - anstatt nur seinen Tod zu betrauern. Aus der Fülle an Informationen, die Sonja von mir bekommen hat, hat sie eine berührende Rede geschrieben. Zudem hat sie mich in den Vorbereitungen noch auf weitere Ideen für die Trauerfeier gebracht und war immer erreichbar und hilfsbereit. Sie hat mich in meiner Trauer abgeholt und empathisch und liebevoll begleitet. Genau so eine Person möchte man in dieser Situation an seiner Seite wissen. Nach dem Begräbnis haben mich viele der weiteren Trauernden auf Sonja und ihre Rede angesprochen. Und so mancher hat auch gleich nach ihrer Homepage gefragt. Kurz gesagt: Ich kann Sonja wärmstens weiterempfehlen und bin sehr glücklich, sie für Papas Trauerfeier gefunden zu haben.",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Lisa-Marie H."
+        //-     },
+        //-     "reviewBody": "Die liebe Sonja hat eine unglaublich schöne und emotionale Rede auf dem Willkommensfest unserer Tochter gehalten. Da wir noch nie mit Willkommensfesten in Berührung gekommen sind, war ich unglaublich froh, dass Sonja gemeinsam mit uns die gesamte Zeremonie gestaltet hat. Sie hat uns verschiedene Rituale vorgestellt, uns gezeigt, was möglich ist und sich perfekt mit unserer Sängerin abgestimmt. Mit Sonja‘s Unterstützung hatten wir ein wunderschönes Willkommensfest für unsere Tochter, welches uns für immer in Erinnerung bleiben wird und wir freuen uns schon so auf den Tag, an dem wir unserer Maus das erste Mal die Rede vorlesen können, wenn sie groß genug ist und alles verstehen kann. All unsere Gäste haben von Sonja und unserem Fest geschwärmt, welches so viel persönlicher und emotionaler als eine traditionelle kirchliche Taufe war. Wir würden es immer wieder so machen und wir hätten uns keine bessere Rednerin als Sonja vorstellen können, da sie unglaublich sympathisch, offenherzig und engagiert ist! Man merkt wirklich sofort, dass Sonja mit ganzem Herzen dabei ist! 🥰Liebe Sonja, wir danken dir nochmals von Herzen für die wunderschönen Worte, die du für uns niedergeschrieben hast und für deine großartige Unterstützung! Wir freuen uns schon sehr auf ein Wiedersehen! ❤️",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Sophia"
+        //-     },
+        //-     "reviewBody": "Die liebe Sonja war die erste unserer DienstleisterInnen, für die wir uns für unsere Hochzeit entschieden haben und war einfach die beste Wahl, die wir hätten treffen können.Ab dem ersten Kennenlerngespräch war für uns klar, dass wir unsere Trauung von niemand anderem begleiten lassen möchten. Da war sofort eine Wärme und Vertrautheit, die uns verbunden hat. Mit ihrer lieben, offenen Art war es so einfach, sich ihr zu öffnen und ihr von unserer Liebesgeschichte zu erzählen. Der Nachmittag bei ihr für unser Traugespräch ging so schnell vorbei, es hat sich eher wie ein Treffen mit einer Freundin angefühlt.Egal, ob wir zwischendrin noch Fragen zur Trauung hatten oder auch mal nach noch einer Empfehlung gefragt haben, sie war immer für uns da und hat auch einen großen Anteil daran, dass wir schlussendlich so ein tolles Dienstleister-Dreamteam an unserer Hochzeit hatten. Sie hat uns in jeder Hinsicht unterstützt und unsere Hochzeit zu einer absoluten Traumhochzeit gemacht.An unserer Trauung hat sie uns, kaum dass wir vor standen, trotz riesiger Aufregung, gleich ein gutes und ruhiges Gefühl gegeben. Sie hat unsere Geschichte so schön und in ihren eigenen Worten erzählt. Es war emotional, lustig und schöner als wir es uns jemals hätten vorstellen können. Auch unsere Gäste, von denen ganz viele noch nie eine freie Trauung miterlebt hatten, waren begeistert.Sollten wir irgendwann noch einmal heiraten oder eine Willkommensfeier für unsere Kinder feiern wollen, dann kommt nur Sonja dafür in Frage ❤️",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Laura Beyfuß"
+        //-     },
+        //-     "reviewBody": "Ich habe bei der lieben Sonja ein 1:1 Mini Mentoring gebucht, um meine Traureden zu verbessern. Ich konnte wirklich alles fragen und Sonja hat mir jede meiner Fragen ausführlichst beantwortet und mir einen transparenten Einblick in Ihre Arbeit gegeben. Durch die 1:1 Betreuung konnten wir gezielt an meinen Problemen arbeiten und ich habe neue Techniken und Herangehensweisen für das Schreiben meiner Rede gelernt. Das Mentoring hat alle meine Erwartungen erfüllt! Sonja zeichnet vor allem ihre Kompetenz, ihre jahrelange Erfahrung und ihre absolute Herzlichkeit aus. Das Mentoring war dadurch nicht nur ausgesprochen hilfreich, sondern hat auch sehr viel Spaß gemacht und die Zeit verging wie im Flug. Ich kann Sonja als Mentorin von Herzen empfehlen!",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     }
+        //- ],

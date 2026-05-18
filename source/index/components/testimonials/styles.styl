@@ -1,0 +1,42 @@
+#testimonials-frame
+    max-width 480px
+    margin-bottom 90px
+    overflow: hidden
+    a
+        font-weight bold
+        text-decoration: underline
+        margin-bottom 30px
+        display block
+
+    .cards
+        display relative
+        
+        // article
+        //     position absolute
+        //     position
+        // article.shown
+        
+        article
+            opacity 0
+            position absolute
+            top 0
+            left 0
+            pointer-events: none
+            z-index -1
+            transition opacity 0.5s
+
+        article.shown
+            position static
+            opacity 1
+            z-index 2
+
+    p.testimonial-card-body
+        font-size 10pt
+        font-style italic
+    
+    cite.testimonial-card-author
+        display block
+        width 100%
+        font-size 9pt
+        text-align: right
+        margin-top 20px

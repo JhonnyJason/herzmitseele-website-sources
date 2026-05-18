@@ -2,11 +2,11 @@ doctype html
 html(lang="de")
     head
         meta(charset='utf-8')
-        title Traurednerin für Eure Hochzeit in Österreich und im Ausland
+        title Traurednerin für Eure Hochzeit in Österreich und im Ausland - Sonja Louven
         meta(name='description', content='Sucht ihr eine professionelle und persönliche Rednerin für Eure Hochzeit? Ob bei einer Freien Trauung in Österreich oder im Ausland, ich unterstütze Euch gerne bei der Abhaltung einer individuellen Trauung, die ganz nach Euren Wünschen gestaltet wird.')
 
         //- Open Graph meta Tags
-        meta(property='og:title' content='Traurednerin für Eure Hochzeit in Österreich und im Ausland')
+        meta(property='og:title' content='Traurednerin für Eure Hochzeit in Österreich und im Ausland - Sonja Louven')
         meta(property='og:description' content='Sucht ihr eine professionelle und persönliche Rednerin für Eure Hochzeit? Ob bei einer Freien Trauung in Österreich oder im Ausland, ich unterstütze Euch gerne bei der Abhaltung einer individuellen Trauung, die ganz nach Euren Wünschen gestaltet wird.')
 
         meta(property='og:type' content='website')
@@ -27,7 +27,113 @@ html(lang="de")
 
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
                 
+        script(type="application/ld+json").
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://herzmitseele.at/#website",
+                "url": "https://herzmitseele.at",
+                "name": "Herz mit Seele",
+                "inLanguage": "de"
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://herzmitseele.at/freietrauung#webpage",
+                "url": "https://herzmitseele.at/freietrauung",
+                "name": "Traurednerin für Eure Hochzeit in Österreich und im Ausland - Sonja Louven",
+                "description": "Sucht ihr eine professionelle und persönliche Rednerin für Eure Hochzeit? Ob bei einer Freien Trauung in Österreich oder im Ausland, ich unterstütze Euch gerne bei der Abhaltung einer individuellen Trauung, die ganz nach Euren Wünschen gestaltet wird.",
+                "inLanguage": "de",
+                "isPartOf": { "@id": "https://herzmitseele.at/#website" }
+              },
+              {
+                "@type": "LocalBusiness",
+                "@id": "https://herzmitseele.at/#business",
+                "name": "Herz mit Seele",
+                "alternateName": "HERZMITSEELE - FREIE TRAUUNG - DESTINATION WEDDING - TRAUREDNERIN - WILLKOMMENSFEIER - TRAUERREDE",
+                "description": "Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.",
+                "url": "https://herzmitseele.at",
+                "telephone": "+43 664 3282007",
+                "email": "rede@herzmitseele.at",
+                "image": "https://herzmitseele.at/img/avatar-home-square.png",
+                "logo": "https://herzmitseele.at/img/logo.svg",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Fraungruberstraße 9",
+                  "addressLocality": "Graz",
+                  "postalCode": "8044",
+                  "addressCountry": "AT"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5.0",
+                  "reviewCount": "90",
+                  "bestRating": "5"
+                },
+                "founder": {
+                  "@type": "Person",
+                  "name": "Mag. Sonja Louven",
+                  "jobTitle": "Freie Rednerin und Traurednerin",
+                  "url": "https://herzmitseele.at/ubermich",
+                  "sameAs": [
+                    "https://www.instagram.com/herzmitseele.freierede/"
+                  ]
+                },
+                "sameAs": [
+                  "https://www.instagram.com/herzmitseele.freierede/",
+                  "https://www.austriawedding.at/hochzeit-inspiration-oesterreich/mountain-elopement-heiraten-am-fusse-des-grimming",
+                  "https://www.austriawedding.at/freie-trauung-hochzeitsredner-oesterreich/herz-mit-seele",
+                  "https://www.steiermarkwedding.at/freie-trauung-steiermark/herz-mit-seele",
+                  "https://www.boho-weddings.com/214060/for-the-love-of-dahlias-sustainable-flower-wedding-inspiration/"
+                ]
+              }
+            ]
+          }
+
         include styles-include.pug
     body
         include ../../source/freietrauung/freietrauungbody.pug
         include scripts-include.pug
+
+        //- "review": [
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Antonia Gsellmann"
+        //-     },
+        //-     "reviewBody": "Sonja ist wirklich die beste Traurednerin, die wir uns für unsere Hochzeit wünschen konnten!Wir haben uns von Anfang an gut verstanden. Sie hat sich beim Traugespräch super viel Zeit genommen und es hat uns auch wirklich Spaß gemacht. Die Trauung selbst war einfach so wunderschön - emotional, lustig und einfach perfekt. Sie hätte keine besseren Worte für uns finden können. Auch den Gästen hat die Trauung wunderbar gefallen und alle waren begeistert. Ich kann Sonja wirklich jedem, der eine Freie Trauung für seine Hochzeit will, empfehlen! Beste Wahl!Vielen vielen lieben Dank Sonja, du hast unseren Tag ganz besonders gemacht!",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Philipp Eibl"
+        //-     },
+        //-     "reviewBody": "Ab dem ersten Telefonat hat uns Sonja mit ihrer Energie und ihrer Ausstrahlung überzeugt. Die Sympathie passte sofort und sie hatte unser komplettes Vertrauen.Die Zeit beim Kennenlerngespräch ist wie im Flug vergangen und hat total Spaß gemacht. Am Weg nachhause sind wir beide im Auto gesessen und haben fast zeitlich gesagt: Das wird einfach so so toll werden!Jetzt, fast eineinhalb Monate nach unserer Hochzeit können wir sagen, dass Sonja es nicht nur toll gemacht, sondern all unsere Erwartungen übertroffen hat. Wir haben alle, wirklich alle gelacht, geweint und waren total beeindruckt. Sonja ist nicht nur eine Freie Rednerin, sie steckt ihr komplettes Herz in die Rede und trägt diese mit einer Leichtigkeit vor, dass sogar ein absolut skeptischer Verwandter, sprachlos war.Wir können ihr nicht oft genug danken, dass sie diesen Tag mit ihrer für uns perfekten Rede, vollkommen gemacht hat.DANKE!Alles LiebeFamilie Eibl",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Pascale Romina Oberhofer"
+        //-     },
+        //-     "reviewBody": "Anfangs hatten wir (oder vor allem mein Mann) etwas Respekt davor einer doch anfangs fremden Person unsere Geschichte und Details zu erzählen. Aber es war Sympathie auf den ersten Blick - ab dem ersten Gespräch mit Sonja hatten wir Beide absolutes Vertrauen in sie und wussten unsere Geschichte in den besten Händen! ✨ Und es hat sich gelohnt zu Vertrauen, unsere freie Trauung war perfekt - von Tränen bis Lachen konnten wir und unsere Gäste bei ihrer Rede alle Emotionen durchleben - sie war gefühlvoll und humorvoll zugleich. Auch alle Gäste waren begeistert von der Art und Weise wie Sonja uns alle in ihren Bann gezogen hat und uns als Paar an diesem Tag hochleben lies! Wir können sie nur von ganzem Herzen weiterempfehlen ♥️ danke liebe Sonja, dass du uns auf dieser Reise begleitet hast!",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     }
+        //- ],

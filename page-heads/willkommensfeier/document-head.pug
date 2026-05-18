@@ -27,7 +27,113 @@ html(lang="de")
 
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         
+        script(type="application/ld+json").
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://herzmitseele.at/#website",
+                "url": "https://herzmitseele.at",
+                "name": "Herz mit Seele",
+                "inLanguage": "de"
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://herzmitseele.at/willkommensfeier#webpage",
+                "url": "https://herzmitseele.at/willkommensfeier",
+                "name": "Rednerin für Willkommensfeier - Kinderwillkommensfeier",
+                "description": "Ihr sucht eine professionelle, freie Rednerin für die Willkommensfeier Eures Kindes? Hier seid ihr genau richtig! Erfahrt mehr über mein Angebot, den Ablauf und die Kosten einer Kinderwillkommensfeier.",
+                "inLanguage": "de",
+                "isPartOf": { "@id": "https://herzmitseele.at/#website" }
+              },
+              {
+                "@type": "LocalBusiness",
+                "@id": "https://herzmitseele.at/#business",
+                "name": "Herz mit Seele",
+                "alternateName": "HERZMITSEELE - FREIE TRAUUNG - DESTINATION WEDDING - TRAUREDNERIN - WILLKOMMENSFEIER - TRAUERREDE",
+                "description": "Mag. Sonja Louven ist Eure persönliche Rednerin für Euren ganz besonderen Anlass. Sei es Eure Hochzeit verbunden mit einer freien Trauung, die Willkommensfeier Eures Kindes, oder die Trauerfeier eines geliebten Menschen. Hier erfahrt ihr mehr über mein Angebot.",
+                "url": "https://herzmitseele.at",
+                "telephone": "+43 664 3282007",
+                "email": "rede@herzmitseele.at",
+                "image": "https://herzmitseele.at/img/avatar-home-square.png",
+                "logo": "https://herzmitseele.at/img/logo.svg",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Fraungruberstraße 9",
+                  "addressLocality": "Graz",
+                  "postalCode": "8044",
+                  "addressCountry": "AT"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5.0",
+                  "reviewCount": "90",
+                  "bestRating": "5"
+                },
+                "founder": {
+                  "@type": "Person",
+                  "name": "Mag. Sonja Louven",
+                  "jobTitle": "Freie Rednerin und Traurednerin",
+                  "url": "https://herzmitseele.at/ubermich",
+                  "sameAs": [
+                    "https://www.instagram.com/herzmitseele.freierede/"
+                  ]
+                },
+                "sameAs": [
+                  "https://www.instagram.com/herzmitseele.freierede/",
+                  "https://www.austriawedding.at/hochzeit-inspiration-oesterreich/mountain-elopement-heiraten-am-fusse-des-grimming",
+                  "https://www.austriawedding.at/freie-trauung-hochzeitsredner-oesterreich/herz-mit-seele",
+                  "https://www.steiermarkwedding.at/freie-trauung-steiermark/herz-mit-seele",
+                  "https://www.boho-weddings.com/214060/for-the-love-of-dahlias-sustainable-flower-wedding-inspiration/"
+                ]
+              }
+            ]
+          }
+
         include styles-include.pug
     body
         include ../../source/willkommensfeier/body.pug
         include scripts-include.pug
+
+        //- "review": [
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Steffi"
+        //-     },
+        //-     "reviewBody": "Auf der Suche nach einer Rednerin für die Willkommensfeier / freie Taufe unserer Tochter sind wir über Google auf Sonja gestoßen. Ab dem Zeitpunkt unseres ersten Telefonates hatte ich sofort ein super gutes Gefühl und habe Sonja direkt ins Herz geschlossen. Sonja hat eine wahnsinnig liebevolle Ausstrahlung, ist offen und charismatisch. Wir hatten ein sehr nettes und entspanntes Vorgespräch und die Vorfreude auf die bevorstehende Feier stieg weiter an. Am Tag der Feier selbst behielt Sonja den Überblick und manövrierte gekonnt durch unvorhergesehene Ereignisse hindurch. :-) Ihre Rede war persönlich, authentisch und herzlich. Wir und auch unsere Gäste waren begeistert von unserer wundervollen Zeremonie und können Sonja nur wärmstens weiterempfehlen.Vielen herzlichen Dank noch einmal für den wunderschönen Tag & diese Momente für die Ewigkeit!",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Lisa-Marie H."
+        //-     },
+        //-     "reviewBody": "Die liebe Sonja hat eine unglaublich schöne und emotionale Rede auf dem Willkommensfest unserer Tochter gehalten. Da wir noch nie mit Willkommensfesten in Berührung gekommen sind, war ich unglaublich froh, dass Sonja gemeinsam mit uns die gesamte Zeremonie gestaltet hat. Sie hat uns verschiedene Rituale vorgestellt, uns gezeigt, was möglich ist und sich perfekt mit unserer Sängerin abgestimmt. Mit Sonja‘s Unterstützung hatten wir ein wunderschönes Willkommensfest für unsere Tochter, welches uns für immer in Erinnerung bleiben wird und wir freuen uns schon so auf den Tag, an dem wir unserer Maus das erste Mal die Rede vorlesen können, wenn sie groß genug ist und alles verstehen kann. All unsere Gäste haben von Sonja und unserem Fest geschwärmt, welches so viel persönlicher und emotionaler als eine traditionelle kirchliche Taufe war. Wir würden es immer wieder so machen und wir hätten uns keine bessere Rednerin als Sonja vorstellen können, da sie unglaublich sympathisch, offenherzig und engagiert ist! Man merkt wirklich sofort, dass Sonja mit ganzem Herzen dabei ist! 🥰Liebe Sonja, wir danken dir nochmals von Herzen für die wunderschönen Worte, die du für uns niedergeschrieben hast und für deine großartige Unterstützung! Wir freuen uns schon sehr auf ein Wiedersehen! ❤️",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     },
+        //-     {
+        //-     "@type": "Review",
+        //-     "author": {
+        //-         "@type": "Person",
+        //-         "name": "Jeanine"
+        //-     },
+        //-     "reviewBody": "Sonja hat gemeinsam mit uns die Willkommensfeier unseres kleinen Sonnenscheins gestaltet.  Sie war einfach einzigartig und unvergesslich. Ihre persönliche Rede hat uns zu Tränen gerührt und wir können sie absolut empfehlen.",
+        //-     "reviewRating": {
+        //-         "@type": "Rating",
+        //-         "ratingValue": "5",
+        //-         "bestRating": "5"
+        //-     }
+        //-     }
+        //- ],
