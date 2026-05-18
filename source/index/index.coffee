@@ -5,8 +5,8 @@ domconnect.initialize()
 global.allModules = Modules
 
 ############################################################
-allTestimonials = document.getElementById("testimonials-frame").querySelectorAll("article")
-intervalId = null
+# allTestimonials = document.getElementById("testimonials-frame").querySelectorAll("article")
+# intervalId = null
 
 
 ############################################################
@@ -44,10 +44,10 @@ appStartup = ->
     # videoFrame.addEventListener("click", toggleMuteness)
     # videoFrame.addEventListener("click", toggleMuteness)
     ## which modules shall be kickstarted?
-    allTestimonials[0].classList.add("shown")
-    intervalId = setInterval(nextTestimonial, 12000)
-    cardsEl = document.getElementById("testimonials-frame").querySelector(".cards")
-    cardsEl.addEventListener("click", cardsClicked)
+    # allTestimonials[0].classList.add("shown")
+    # intervalId = setInterval(nextTestimonial, 12000)
+    # cardsEl = document.getElementById("testimonials-frame").querySelector(".cards")
+    # cardsEl.addEventListener("click", cardsClicked)
     return
 
 ############################################################
